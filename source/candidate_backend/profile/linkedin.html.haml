@@ -1,0 +1,129 @@
+;;;
+
+"title": "LinkedIn Edit", 
+"layout": "candidate",
+"activeclass": "profile"
+	
+;;;
+
+
+%section
+	.container
+		.alert.alert-basic
+			.media
+				.pull-left
+					%h1.social-font-name.half-margin-right.no-margin-bottom{:style=>"font-size:4em;"}
+						i
+				.media-body
+					%strong
+						Include your LinkedIn profile along with your assessments
+					Click 
+					%a{:href=>"/candidate_backend/profile/linkedin"}
+						here 
+					to be redirected to the LinkedIn website to provide your signin credentials 
+		.row
+			.col-lg-12
+				.page-header.no-margin-bottom
+					%h1.no-margin-bottom.pull-left
+						Would you like to include your LinkedIn Profile?
+					.clearfix
+				%p
+					Select what elements of your LinkedIn profile you would like to include with your assessments
+				.test-container.double-margin-top
+					%form.form-horizontal{role: "form"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Profile Picture
+							.col-xs-6
+								=image_tag"http://d13yacurqjgara.cloudfront.net/users/16711/avatars/original/image.jpg?1382734315",:class=>"img-circle avatar-md"
+						.form-group
+							%label.col-xs-3.control-label 
+								Name
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Headline
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Email Address
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Summary
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Skills
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Industry
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Languages
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Interests
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+						.form-group
+							%label.col-xs-3.control-label 
+								Current Position
+							.col-xs-6
+								%dl.dl-horizontal
+									%dt
+										Company Name:
+									%dd
+										Company
+									%dt
+										Title:
+									%dd
+										Title Name
+									%dt
+										Summary:
+									%dd
+										Summary
+									%dt
+										Start Date:
+									%dd
+										Jan. 30, 2012
+							.col-xs-3
+								%input{type:"checkbox", :checked=>"checked"}
+
+				%hr
+				.test-footer
+					.row
+						.col-sm-4
+						.col-sm-8
+							%p.pull-right
+								%a.btn.btn-lg.btn-success.margin-bottom{href:"/candidate_backend/profile/show"}
+									Save Profile
+
+				
+

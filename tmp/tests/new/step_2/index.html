@@ -1,0 +1,790 @@
+<div class='modal-dialog modal-lg'>
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+      <h1 class='modal-title'>
+        Find and Assign Tests
+      </h1>
+    </div>
+    <div class='modal-body no-padding'>
+      <section class='invert-section progress-indacator hidden-xs'>
+        <div class='padded'>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                1
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    <a data-dismiss='modal' data-target='#newTestModalSelectTests' data-toggle='modal' href='/tests/new'>
+                      Select Tests
+                    </a>
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                2
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text active'>
+                    Select Candidates
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-default'>
+                3
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    Freeform Questions
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+      </section>
+      <div class='padded'>
+        <div class='margin-bottom clearfix'>
+          <div class='page-header'>
+            <h2>
+              2. Select your desired candidates.
+            </h2>
+            <p class='no-margin-bottom'>
+              Select the appropriate candidates for your selected tests. Once assigned, your candidates will be notified of their tests via email
+            </p>
+          </div>
+          <a class='btn btn-primary btn-lg' data-target='#newCandidateModal' data-toggle='modal' href='/candidates/new'>
+            <i class='fa fa-plus-circle'></i>
+            New Candidate
+          </a>
+          <div class='margin-top'>
+            <script>
+              $(document).ready(function() {
+              
+              	$('.popover-filter-toggle-3').click(function() {
+              		$('.wh-popover-filter-inner-3').toggleClass('hidden');
+              		return false; 
+              	});
+              
+              	$("#clear-popover-filter-3").click(function() {
+              		$('.wh-popover-filter-inner-3 .yadcf-filter-reset-button').click();
+              		return false; 
+              	});
+              
+              	$('table').footable();
+              
+              
+              	var whDatatable = $('#table4').dataTable({
+              		'iDisplayLength': 23,
+              		'bPaginate': false,
+              		'bInfo': false
+              	}).yadcf([{
+              		column_number : 0,
+              		select_type: 'chosen', 
+              		column_data_type: "html", 
+              		html_data_type: "text",
+              		filter_container_id: 'name3_filter_container',
+              		filter_default_label:"Select a Candidate"
+              	} , {
+              		column_number : 1,
+              		filter_container_id: 'type4_filter_container',
+              		select_type: 'chosen', 
+              		filter_default_label:"Select a Type"
+              	} , {
+              		column_number : 2,
+              		filter_container_id: 'job_role3_filter_container',
+              		select_type: 'chosen', 
+              		filter_default_label:"Select a Job Role"
+              	}]);
+              
+              } );
+            </script>
+            <div class='clearfix' style='position:relative;'>
+              <div class='wh-table-filter-wrapper pull-left hidden-xs'>
+                <button class='popover-filter-toggle-3 wh-table-filter-button btn btn-info' rel='popover'>
+                  Filter
+                  <span class='caret'></span>
+                </button>
+                <div class='right popover hidden wh-popover-filter-inner-3 wh-filter-show wh-filter-inner full-width' style='display:block; top:50px;'>
+                  <div class='arrow' style='left:13%;'></div>
+                  <div class='padded'>
+                    <div class='wh-filter-form-wrapper'>
+                      <form>
+                        <div class='form-group'>
+                          <label>
+                            Cndidate Name:
+                          </label>
+                          <div id='name3_filter_container'></div>
+                          <label>
+                            Type:
+                          </label>
+                          <div id='type4_filter_container'></div>
+                          <label>
+                            Job Role:
+                          </label>
+                          <div id='job_role3_filter_container'></div>
+                        </div>
+                      </form>
+                    </div>
+                    <hr>
+                    <div class='clearfix'>
+                      <div class='pull-left'>
+                        <button class='btn btn-info' id='clear-popover-filter-3'>
+                          Reset
+                        </button>
+                      </div>
+                      <div class='pull-right'>
+                        <button class='btn btn-primary popover-filter-toggle-3'>
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='wh-table-search-wrapper pull-right'>
+                <input class='form-control wh-table-search' id='popover-filter-3' placeholder='Search'>
+              </div>
+            </div>
+            <div class='wh-table-wrapper' style='min-height:300px;'>
+              <table border='0' cellpadding='0' cellspacing='0' class='display table margin-top border-bottom' data-filter='#popover-filter-3' id='table4' width='100%'>
+                <thead>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th data-hide='phone'>
+                      Type
+                    </th>
+                    <th data-hide='phone'>
+                      Job Role
+                    </th>
+                    <th data-hide='phone'>
+                      Date Created
+                    </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Sheryl Bender
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Sat Jun 13, 1998
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Francesca Matthews
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Dec 05, 2001
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Skye Vick
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Sat Sep 30, 2000
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Colton Rose
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Jul 08, 1992
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Lucinda Baker
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Mon May 13, 2002
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Bonita Merritt
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Mon Mar 01, 1999
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Eoin Sinclair
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Dec 10, 2008
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Francesca Connolly
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Sun Mar 18, 1990
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Ian James
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Fri May 16, 2003
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Alma Underwood
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Mon Dec 07, 1992
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Tammie Monroe
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Fri Jan 09, 2004
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Jared Schultz
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Fri Aug 11, 2006
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Rolando Woodard
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Tue May 26, 1992
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Francesca Steele
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Mon Jan 07, 2002
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Isabelle Weiner
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Jan 11, 1995
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Perla Stout
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Tue Sep 16, 2003
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Sydney Hoyle
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Sun Nov 01, 1998
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Vance Tilley
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Fri Feb 27, 2004
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Andres Schroeder
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Thu Mar 18, 2004
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Elias West
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Oct 30, 2002
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Trisha Bowman
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Oct 25, 2000
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Peggy Hardin
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Wed Jun 20, 2001
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../../../images/no_avatar_sm.png" />
+                      Cindy Black
+                      <a class='half-margin-left no-underline-link' href='mailto:john@doe.com;'>
+                        <i class='fa fa-envelope-o'></i>
+                      </a>
+                    </td>
+                    <td>
+                      Prehire
+                    </td>
+                    <td>
+                      Not Specified
+                    </td>
+                    <td>
+                      Sun May 27, 2001
+                    </td>
+                    <td>
+                      <label class='btn btn-success'>
+                        <input id='option1' name='options' type='checkbox'>
+                          Select
+                        </input>
+                      </label>
+                    </td>
+                  </tr>
+                  <tfoot class='hidden'>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Type
+                      </th>
+                      <th>
+                        Job Role
+                      </th>
+                      <th>
+                        Date Created
+                      </th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal-footer no-margin-top'>
+      <a class='cursor-pointer half-margin-right' data-dismiss='modal' type='button'>
+        Cancel
+      </a>
+      <button class='btn btn-primary' data-dismiss='modal' data-target='#newTestModalFreeform' data-toggle='modal' href='/tests/new/step_3'>
+        Continue
+      </button>
+    </div>
+  </div>
+</div>

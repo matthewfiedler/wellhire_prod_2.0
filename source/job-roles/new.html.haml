@@ -1,0 +1,34 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				New Job Role
+		.modal-body
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Title
+					.col-sm-7
+						%input.form-control{placeholder: "Ex: Designer"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Description (optional)
+					.col-sm-7
+						%textarea.form-control{:rows=>"8"}
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button" ,"data-toggle"=>"modal"} 
+				%i.fa.fa-plus-circle
+				Create Job Role

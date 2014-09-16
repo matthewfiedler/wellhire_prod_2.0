@@ -1,0 +1,65 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				Update Payment Info
+		.modal-body
+			%form.form-horizontal{:role=>"form"}
+				/ card type
+				.form-group
+					%lebel.col-sm-4.control-label
+						Card Type
+					.col-sm-8
+						%select.form-control
+							%option
+								Visa
+				/ card number
+				.form-group
+					%lebel.col-sm-4.control-label
+						Card Number
+					.col-sm-8
+						%input.form-control
+				/ expiration date
+				.form-group
+					%lebel.col-sm-4.control-label
+						Expiration Date
+					.col-sm-8
+						.row
+							.col-sm-6
+								%select.form-control.margin-bottom
+									%option
+										01-Jan
+							.col-sm-6
+								%select.form-control
+									%option
+										2016
+				/ card type
+				.form-group
+					%lebel.col-sm-4.control-label
+						CVV2 Code
+					.col-sm-8
+						%input.form-control
+				.form-group
+					%lebel.col-sm-4.control-label
+						Cardholder First Name
+					.col-sm-8
+						%input.form-control
+				.form-group
+					%lebel.col-sm-4.control-label
+						Cardholder Last Name
+					.col-sm-8
+						%input.form-control
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				Update Payment Info

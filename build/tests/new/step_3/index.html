@@ -1,0 +1,133 @@
+<div class='modal-dialog modal-lg'>
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+      <h1 class='modal-title'>
+        Find and Assign Tests
+      </h1>
+    </div>
+    <div class='modal-body no-padding'>
+      <section class='invert-section progress-indacator hidden-xs'>
+        <div class='padded'>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                1
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    <a data-dismiss='modal' data-target='#newTestModalSelectTests' data-toggle='modal' href='/tests/new'>
+                      Select Tests
+                    </a>
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                2
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    <a data-dismiss='modal' data-target='#newTestModalSelectCandidates' data-toggle='modal' href='/tests/new/step_2'>
+                      Select Candidates
+                    </a>
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                3
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text active'>
+                    Freeform Questions
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+      </section>
+      <div class='padded'>
+        <div class='margin-bottom clearfix'>
+          <div class='page-header'>
+            <h2>
+              3. Select freeform qustions
+            </h2>
+            <p class='no-margin-bottom'>
+              Please select and edit the questions you would like displayed for your candidate after they have completed the test.
+            </p>
+          </div>
+          <h5>
+            Add a Question
+          </h5>
+          <form class='form-horizontal' role='form'>
+            <div class='form-group'>
+              <label class='col-xs-3 control-label'>
+                Question:
+              </label>
+              <div class='col-xs-9'>
+                <input class='form-control half-margin-bottom'>
+                <a class='btn btn-default pull-right' href='onclick: return false;'>
+                  Add Question
+                </a>
+              </div>
+            </div>
+          </form>
+          <hr>
+          <h5>
+            Manage Questions
+          </h5>
+          <div class='alert alert-basic'>
+            <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+              &times;
+            </button>
+            Why would you be the best candidate for this position?
+          </div>
+          <div class='alert alert-basic'>
+            <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+              &times;
+            </button>
+            Please list and explain your 5 greatest strengths?
+          </div>
+          <div class='alert alert-basic'>
+            <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+              &times;
+            </button>
+            Please list and explain your biggest weakness.
+          </div>
+          <div class='alert alert-basic'>
+            <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+              &times;
+            </button>
+            What interests you most about our organization?
+          </div>
+          <div class='alert alert-basic'>
+            <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+              &times;
+            </button>
+            Is there any additional information about you that you feel we should know?
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal-footer no-margin-top'>
+      <a class='cursor-pointer half-margin-right' data-dismiss='modal' type='button'>
+        Cancel
+      </a>
+      <button class='btn btn-primary' data-dismiss='modal' data-target='#newTestModaReview' data-toggle='modal' href='/tests/new/step_4'>
+        Finish
+      </button>
+    </div>
+  </div>
+</div>

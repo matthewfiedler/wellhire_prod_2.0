@@ -1,0 +1,59 @@
+;;;
+
+"title": "Test: Business Essentials", 
+"layout": "candidate",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				.page-header
+					%h1.no-margin-bottom.pull-left
+						Test In Progress
+					.clearfix
+				.test-question-container.margin-top
+					.margin-bottom
+						%p
+							Freeform Questions
+					.test-freeform.margin-bottom
+						.row
+							.col-sm-6
+								%form.margin-bottom
+									.form-group
+										%h4
+											1. What's Your Favorite...
+										%textarea.form-control{:rows=>"5"}
+										.dotted-border.well.quarter-margin-top
+											%a.btn.btn-default{"data-toggle"=>"modal", :href=>"/video/new", "data-target"=>"#videoModal"}
+												Answer with a video
+									%form.margin-bottom
+									.form-group
+										%h4
+											2. What's Your Favorite...
+										%textarea.form-control{:rows=>"5"}
+										.alert.alert-success.quarter-margin-top
+											%p.no-margin-bottom
+												%span.quarter-margin-right
+													=partial"shared/video_thumb_small"
+												%span{:style=>"position:relative; top:-12px;"}
+													Jan. 20, 2014 4:00:22
+													%a{:href=>"#"}
+														%i.fa.fa-times-circle.text-danger
+							.col-sm-6
+				%hr
+				.test-footer
+					.row
+						.col-sm-4
+						.col-sm-8
+							%p.pull-right
+								%a.btn.btn-lg.btn-success.margin-bottom{:href=>"/candidate_backend/tests/feedback"}
+									Submit Responses & Give Feedback
+									%i.fa.fa-long-arrow-right
+
+
+
+

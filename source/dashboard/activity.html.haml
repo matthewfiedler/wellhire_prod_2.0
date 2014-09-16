@@ -1,0 +1,23 @@
+;;;
+
+"title": "Activity", 
+"subnav_data": "dashboard_subnav",
+"description": "Your recent activity.",
+"iconclass": "fa-ellipsis-h",
+"activeclass": "dashboard"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+		.row.margin-bottom
+			.col-lg-12
+				.wh-activity-stream
+					-50.times do
+						=partial"/dashboard/activity_item"
+
+

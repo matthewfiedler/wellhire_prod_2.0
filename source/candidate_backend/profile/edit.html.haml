@@ -1,0 +1,207 @@
+;;;
+
+"title": "LinkedIn Edit", 
+"layout": "candidate",
+"activeclass": "profile"
+	
+;;;
+
+
+%section
+	.container
+		=partial"/candidate_backend/linkedin_alert" 
+		.row
+			.col-lg-12
+				.page-header.no-margin-bottom
+					%h1.no-margin-bottom.pull-left
+						Edit Profile
+					.clearfix
+				%p
+					Edit your profile or import the information directly from LinkedIn.
+				.test-container.double-margin-top
+					%form.form-horizontal{role: "form"}
+						%p.double-margin-bottom
+							Basic Info
+						.form-group
+							%label.col-xs-3.control-label 
+								Profile Picture
+							.col-xs-6
+								=image_tag"http://d13yacurqjgara.cloudfront.net/users/16711/avatars/original/image.jpg?1382734315",:class=>"img-circle avatar-md"
+						.form-group
+							%label.col-xs-3.control-label 
+								Name
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Headline
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Email Address
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Summary
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Skills
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Industry
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Languages
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group#video
+							%label.col-xs-3.control-label 
+								Interests
+							.col-xs-6
+								%textarea.form-control{:rows=>"4"}
+							.col-xs-3
+						%p.double-margin-bottom
+							About Me Video
+						.form-group
+							%label.col-xs-3.control-label 
+								video
+							.col-xs-6
+								=image_tag"/images/video-default.png",:class=>"img-rounded avatar-md video-placeholder"
+								%p.quarter-margin-bottom.quarter-margin-top
+									%a.btn.btn-default{"data-toggle"=>"modal", :href=>"/video/new", "data-target"=>"#videoModal"}
+										Record new video
+								%p
+									%small.text-info
+									Record a short video about yourself. Max length 2:00min
+						.form-group
+							%label.col-xs-3.control-label 
+								video
+							.col-xs-6
+								=image_tag"http://abshirepr.com/wp-content/uploads/2013/10/Bill-Kenney-headshot-1024x683.jpg",:class=>"img-rounded avatar-md"
+								%p.no-margin-bottom.quarter-margin-top
+									%i.fa.fa-video-camera.half-margin-bottom
+									Video From Jan. 20, 2014 4:00:22pm
+									%br
+									%a.btn.btn-info{:href=>"#"}
+										Delete
+									%a.btn.btn-default{"data-toggle"=>"modal", :href=>"/video/new", "data-target"=>"#videoModal"}
+										Record new video
+						%p.double-margin-bottom
+							Work Expierence
+						.form-group
+							%label.col-xs-3.control-label 
+								Company Name
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Title
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Summary
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						.form-group
+							%label.col-xs-3.control-label 
+								Start Date
+							.col-xs-6
+								%input.form-control
+							.col-xs-3
+						%p.double-margin-bottom
+							Degrees
+						-2.times do
+							.form-group
+								%label.col-xs-3.control-label 
+									Degree
+								.col-xs-6
+									%dl.dl-horizontal
+										%dt
+											School:
+										%dd
+											Colorad State University
+										%dt
+											Field of Study:
+										%dd
+											Graphic Design
+										%dt
+											Description:
+										%dd
+											Summary
+										%dt
+											Date Attended:
+										%dd
+											2006 - 2011
+								.col-xs-3
+									%a.text-danger{:href=>"#"}
+										Remove
+						.form-group
+							.col-xs-3
+							.col-xs-9
+								%a.btn.btn-primary{"data-toggle"=>"modal", :href=>"/candidate_backend/profile/new_degree", "data-target"=>"#newDegreeModal"} 
+									%i.fa.fa-plus-circle
+									Add Degree
+						%p.double-margin-bottom
+							Past Psitions
+						-2.times do
+							.form-group
+								%label.col-xs-3.control-label 
+									Position
+								.col-xs-6
+									%dl.dl-horizontal
+										%dt
+											Company Name:
+										%dd
+											Company
+										%dt
+											Title:
+										%dd
+											Title Name
+										%dt
+											Summary:
+										%dd
+											Summary
+										%dt
+											Start Date:
+										%dd
+											Jan. 30, 2012
+								.col-xs-3
+									%a.text-danger{:href=>"#"}
+										Remove
+						.form-group
+							.col-xs-3
+							.col-xs-9
+								%a.btn.btn-primary{"data-toggle"=>"modal", :href=>"/candidate_backend/profile/new_position", "data-target"=>"#newPositionModal"} 
+									%i.fa.fa-plus-circle
+									Add Position
+
+				%hr
+				.test-footer
+					.row
+						.col-sm-4
+						.col-sm-8
+							%p.pull-right
+								%a.btn.btn-lg.btn-success.margin-bottom{href:"/candidate_backend/profile/show"}
+									Save Profile
+
+				
+

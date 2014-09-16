@@ -1,0 +1,29 @@
+.row.double-margin-bottom
+	.col-sm-2.col-xs-3
+		=image_tag"http://d13yacurqjgara.cloudfront.net/users/16711/avatars/original/image.jpg?1382734315", :class=>"img-circle half-margin-bottom half-margin-top img-responsive margin-auto"
+	.col-sm-10.col-xs-9
+		%h1.media-heading.no-margin-bottom
+			John Doe
+		%p.no-margin-bottom.hidden-xs
+			Hands-on Technical Director, Author, and Advocate of New Technologies 
+		%p.text-muted
+			%small
+				%strong
+					New York, New York | Marketing & Advertising 
+		.btn-group
+			%a.btn.btn-sm.btn-primary{:href=>"mailto:john@doe.com"} 
+				%i.fa.fa-envelope
+				Send Email
+			%button.btn.dropdown-toggle.btn-sm.btn-primary{"data-toggle" => "dropdown", type: "button"}
+				%span.caret
+				%span.sr-only Toggle Dropdown
+			%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+				%li
+					%a{"data-toggle"=>"modal", :href=>"/candidates/edit", "data-target"=>"#editCandidateModal"}
+						Edit
+				%li
+					%a
+						Assign Test
+.row.margin-bottom
+	.col-lg-12
+		=partial"/shared/subnav_links", locals:{:navbarclass=>"navbar-left"}

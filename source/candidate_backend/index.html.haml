@@ -1,0 +1,88 @@
+;;;
+
+"title": "My Tests", 
+"layout": "candidate",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				.alert.alert-success
+					%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+						&times;
+					You have completed the test
+					%a{"data-toggle"=>"modal", :href=>"/candidate_backend/tests/start", "data-target"=>"#showTestModalNoStart"}
+						Business Communication II 
+				.page-header.half-margin-bottom
+					%h1.no-margin-bottom
+						My Tests
+				%ul
+					%li
+						This is where candidates can take assessments assigned to them.  Results will be confidentially shared with the hiring company.
+					%li
+						Candidates are encouraged to visit the
+						%strong 
+							"Edit Profile" 
+						tab and import their linked-in profile; or include information about themselves.  Candidates are also highly encouraged to include a video.
+					%li
+						Candidates are encouraged to visit the 
+						%strong
+							"My Interview" 
+						tab to complete the video interview.
+				/ .alert.alert-info
+				/ 	%strong
+				/ 		Heads Up!
+				/ 	The number of times you leave a test which is already in progress will be tracked by the system.
+				=partial"/candidate_backend/linkedin_alert"
+				=partial"/candidate_backend/interview_alert"
+				=partial"/candidate_backend/video_alert"
+		.row
+			.col-lg-12
+				.double-margin-bottom
+					.page-header.half-margin-bottom
+						%h3.no-margin-bottom
+							Tests to Complete
+					%p
+						Listed below are the assessments assigned to you for completion
+				-3.times do
+					.candidate-test-thumb-container.double-margin-bottom
+						.row
+							.col-sm-1
+								%i.fa.fa-file-text.candidate-test-icon-default.large-icon
+							.col-sm-8
+								%h4.no-margin-bottom
+									Business Communication II
+								%p.text-muted
+									%small
+										Assigned on Feb 19, 2014
+								%p
+									Business Communication measures knowledge of communicating in the workplace. It measures the skills necessary to communicate effectively with clients and coworkers at all levels....
+									%a{"data-toggle"=>"modal", :href=>"/candidate_backend/tests/start", "data-target"=>"#showTestModal"}
+										More info
+							.col-sm-3
+								%a.btn.btn-success.btn-lg{"data-toggle"=>"modal", :href=>"/candidate_backend/tests/start", "data-target"=>"#showTestModal"}
+									Get Started
+						%hr
+		.row
+			.col-lg-12
+				.double-margin-bottom
+					.page-header.half-margin-bottom
+						%h3.no-margin-bottom
+							My Completed Tests
+				-3.times do
+					.candidate-test-thumb-container.double-margin-bottom
+						.row
+							.col-sm-1
+								%i.fa.fa-check-square-o.candidate-test-icon-success.large-icon
+							.col-sm-11
+								%h4.no-margin-bottom
+									Business Communication I
+								%p.text-success
+									%small
+										Completed on Feb 19, 2014
+						%hr
+

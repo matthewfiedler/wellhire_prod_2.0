@@ -1,0 +1,92 @@
+:javascript
+	$(document).ready(function() {
+
+		$('.popover-filter-toggle-1').click(function() {
+			$('.wh-popover-filter-inner-1').toggleClass('hidden');
+			return false; 
+		});
+
+		$("#clear-popover-filter-1").click(function() {
+			$('.wh-popover-filter-inner-1 .yadcf-filter-reset-button').click();
+			return false; 
+		});
+
+		$('table').footable();
+
+
+		var whDatatable = $('#table2').dataTable({
+			'iDisplayLength': 23,
+			'bPaginate': false,
+			'bInfo': false
+		}).yadcf([{
+			column_number : 1,
+			filter_container_id: 'type2_filter_container',
+			filter_default_label:"Select a Type", 
+		}]);
+
+	} );
+
+
+.clearfix{:style=>"position:relative;"}
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button.popover-filter-toggle-1.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-popover-filter-inner-1.wh-filter-show.wh-filter-inner.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form
+						.form-group
+							%label
+								Test Type:
+							#type2_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-popover-filter-1
+							Reset
+					.pull-right
+						%button.btn.btn-primary.popover-filter-toggle-1
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#popover-filter-1.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table2.display.table.margin-top.border-bottom{"data-filter"=>"#popover-filter-1", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Test Title
+				%th{"data-hide"=>"phone"}
+					Type
+				%th{"data-hide"=>"phone"}
+					Time
+				%th
+
+		%tbody
+			-23.times do
+				%tr
+					%td
+						%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+							Business Communication II
+					%td
+						Skillset
+					%td
+						20 Min
+					%td
+						%label.btn.btn-success
+							%input{:type=>"radio",:name=>"options", :id=>"option1"}
+								Select
+			%tfoot.hidden
+				%tr
+					%th
+						Test Title
+					%th
+						Type
+					%th
+						Time
+					%th
+

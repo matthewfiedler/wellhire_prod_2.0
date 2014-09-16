@@ -1,0 +1,89 @@
+:javascript
+	$(document).ready(function() {
+
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+			column_number : 3, 
+			filter_type: "date",date_format: "D M dd, yy", 
+			filter_container_id: "date_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Date Created:
+							#date_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Job Role
+				%th{"data-hide"=>"phone"}
+					Description
+				%th{"data-hide"=>"phone"}
+					Candidates
+				%th{"data-hide"=>"phone"}
+					Date Created
+				%th{"data-hide"=>"phone"}
+					Actions
+		%tbody
+			- 3.times do
+				%tr
+					%td
+						%a{"data-toggle"=>"modal", :href=>"/job-roles/edit", "data-target"=>"#editJobRoleModal"}
+							Designer
+					%td
+						No Description
+					%td
+						3
+					%td
+						= lorem.date
+					%td
+						.btn-group
+							%a.btn.btn-xs.btn-info{"data-toggle"=>"modal", :href=>"/job-roles/edit", "data-target"=>"#editJobRoleModal"}
+								Edit
+							%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
+								%span.caret
+								%span.sr-only Toggle Dropdown
+							%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+								%li
+									%a{"data-toggle"=>"modal", "data-target"=>"#removeJobRoleModalConfirm", :href=>"onclick(refutn false;)"}
+										Delete
+			%tfoot.hidden
+				%tr
+					%th
+						Name
+					%th
+						Description
+					%th
+						Candidates
+					%th
+						Date Created
+					%th
+						Actions

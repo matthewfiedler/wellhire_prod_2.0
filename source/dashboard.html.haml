@@ -1,0 +1,41 @@
+;;;
+
+"title": "Dashboard", 
+"subnav_data": "dashboard_subnav",
+"description": "This is your hiring mission control, providing you with an overview of your candidate activity.",
+"iconclass": "fa-th-large",
+"activeclass": "dashboard"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+		.row.margin-bottom
+			.col-lg-12
+				=partial "/dashboard/dashboard_teaser"
+				.page-header
+					%h3.no-margin-bottom
+						Incoming Activity
+				.wh-activity-stream
+					-5.times do
+						=partial"/dashboard/activity_item"
+					=partial"/dashboard/activity_new_video_uploaded"
+					=partial"/dashboard/activity_new_video_uploaded_interview"
+					.wh-stream-item
+						.page-header.margin-top
+							%p
+								%a{:href=>"/dashboard/activity"}
+									See All Incoming Activity...
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Top Candidates
+				=partial"/shared/top_candidates_table"
+				
+
+

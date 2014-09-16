@@ -1,0 +1,129 @@
+:javascript
+	$(document).ready(function() {
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+			column_number : 0, 
+			filter_type: "date",date_format: "D M dd, yy", 
+			filter_container_id: "date_filter_container"
+		}, {
+			column_number : 1,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_default_label:"Select a Test", 
+			filter_container_id: "test_filter_container"
+		}, {
+			column_number : 2, 
+			select_type: 'chosen', 
+			filter_container_id: "role_filter_container"
+		}, {
+			column_number : 3, 
+			select_type: 'chosen', 
+			filter_container_id: "status_filter_container"
+		}, {
+			column_number : 4, 
+			select_type: 'chosen', 
+			filter_container_id: "created_by_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Date Completed:
+							#date_filter_container
+						.form-group
+							%label
+								Test Name:
+							#test_filter_container
+						.form-group
+							%label
+								Role:
+							#role_filter_container
+						.form-group
+							%label
+								Status:
+							#status_filter_container
+						.form-group
+							%label
+								Created By:
+							#created_by_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Date Created
+				%th
+					Test Name
+				%th{"data-hide"=>"phone"}
+					Job Role
+				%th{"data-hide"=>"phone"}
+					Status
+				%th{"data-hide"=>"phone"}
+					Created By
+				%th{"data-hide"=>"phone"}
+					Actions
+		%tbody
+			%tr
+				%td
+					%a{"data-toggle"=>"modal", :href=>"/job-links/show", "data-target"=>"#showJobLinkModal"}
+						= lorem.date
+				%td
+					%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+						Business Skills II
+				%td
+					Designer
+				%td.text-success
+					Active
+				%td
+					Chris Scordo
+				%td
+					.btn-group
+						%a.btn.btn-xs.btn-info{"data-toggle"=>"modal", :href=>"/job-links/show", "data-target"=>"#showJobLinkModal"} 
+							View
+						%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
+							%span.caret
+							%span.sr-only Toggle Dropdown
+						%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+							%li
+								%a{:href=>"onclick(return; false)","data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#markJobLinkInactiveModal"}
+									Mark Inactive
+			%tfoot.hidden
+				%tr
+					%th
+						Date
+					%th
+						Test Name
+					%th
+						Role
+					%th
+						Status
+					%th
+						Created By
+					%th
+						Actions

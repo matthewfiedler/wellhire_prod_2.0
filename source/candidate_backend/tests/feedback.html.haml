@@ -1,0 +1,62 @@
+;;;
+
+"title": "Test: Business Essentials", 
+"layout": "candidate",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				.page-header
+					%h1.no-margin-bottom.pull-left
+						Test Completed
+					.clearfix
+				%p
+					Thanks, your test has been saved for review. You can exit at any time or return to the 
+					%a{href:"/candidate_backend/"}
+						test menu.
+				.test-question-container.margin-top
+					.margin-bottom
+						%p
+							Your Feedback Counts
+					.row
+						.col-sm-9
+							-4.times do
+								.feedback-item.margin-bottom
+									%h4
+										Do you think the assessment questions were worded in a manner which was concise and grammatically correct? 
+									%select.form-control
+										%option 
+											Option 1
+										%option 
+											Option 2
+							.feedback-item
+								%form.margin-bottom
+									.form-group
+										%h4
+											Would another assessment have been more suitable? Let us know below: 
+										%textarea.form-control{:rows=>"5"}
+							.feedback-item
+								%form.margin-bottom
+									.form-group
+										%h4
+											Please let us know if there are ways we can improve the assessment experience: 
+										%textarea.form-control{:rows=>"5"}
+						.col-sm-3
+
+				%hr
+				.test-footer
+					.row
+						.col-sm-4
+						.col-sm-8
+							%p.pull-right
+								%a.btn.btn-lg.btn-success.margin-bottom{href:"/candidate_backend/"}
+									Submit Feedback
+									%i.fa.fa-long-arrow-right
+
+				
+

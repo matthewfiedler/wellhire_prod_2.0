@@ -1,0 +1,80 @@
+%section.no-padding-top
+	%footer
+		.container
+			.row
+				.col-sm-12
+					.pull-left.padding-top.border-top.full-width
+						%nav
+							%ul.list-inline.pull-left.footer-nav
+								%li
+									© 2014 Wellhire All rights reserved.
+								%li
+									%a{"data-toggle"=>"modal", :href=>"/info/terms", "data-target"=>"#termsModal"}
+										Terms
+								%li
+									%a{:href=>"/contact"}
+										Contact & Support
+								%li
+									%a{:href=>"/faqs"}
+										FAQs
+								%li
+									%a{:href=>"/account/"}
+										My Account
+								%li
+									%a{:href=>"http://wellhire.wordpress.com "}
+										Blog
+
+//global
+#termsModal.modal.fade{"aria-hidden" => "true", role: "dialog"}
+
+
+//modals
+
+//candidates
+#newCandidateModal.modal.front-modal{"aria-hidden" => "true", role: "dialog"}
+#editCandidateModal.modal{"aria-hidden" => "true", role: "dialog"}
+#markCandidateInactiveModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Are you sure you want to mark candidate John Doe as inactive?"}
+
+
+//job roles
+#newJobRoleModal.modal.front-modal{"aria-hidden" => "true", role: "dialog"}
+#editJobRoleModal.modal{"aria-hidden" => "true", role: "dialog"}
+#removeJobRoleModalConfirm.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Are you sure you want to delete this job role?"}
+
+
+//interview questions
+#removeInterviewQuestionConfirm.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Are you sure you want to delete this interview question?"}
+#editInterviewQuestionModal.modal{"aria-hidden" => "true", role: "dialog"}
+#newInterviewQuestionModal.modal-scroll.modal{"aria-hidden" => "true", role: "dialog"}
+
+//tests
+#showTestModal.modal.front-modal{"aria-hidden" => "true", role: "dialog"}
+#newTestModalSelectTests.modal-scroll.modal{"aria-hidden" => "true", role: "dialog"}
+#newTestModalSelectCandidates.modal-scroll.modal{"aria-hidden" => "true", role: "dialog"}
+#newTestModalFreeform.modal-scroll.modal{"aria-hidden" => "true", role: "dialog"}
+#newTestModaReview.modal{"aria-hidden" => "true", role: "dialog"}
+#sendCandidateReminderModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Send ccandidate reminder?"}
+
+//job links
+#showJobLinkModal.modal{"aria-hidden" => "true", role: "dialog"}
+#markJobLinkInactiveModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Are you sure you want to deactivate this job link?"}
+#newJobLinkModal.modal.modal-scroll{"aria-hidden" => "true", role: "dialog"}
+
+//Account
+
+#cancelAccountModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Delete Account Confirm message?"}
+
+//members
+#newMemberModal.modal{"aria-hidden" => "true", role: "dialog"}
+#editMemberModal.modal{"aria-hidden" => "true", role: "dialog"}
+#markMemberInactiveModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "shared/confirm_modal", :locals=>{:text =>"Are you sure you want to mark member John Doe as inactive?"}
+
+//payments
+#editPaymentModal.modal{"aria-hidden" => "true", role: "dialog"}

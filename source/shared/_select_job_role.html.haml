@@ -1,0 +1,15 @@
+.margin-bottom.clearfix
+	.page-header
+		%p.no-margin-bottom
+			=text
+	.form-group
+		%label.col-sm-2.control-label.text-right
+			job Role:
+		.col-sm-4
+			%select.form-control.half-margin-bottom.input-sm
+				%option
+					Designer
+				%option
+					Other Option
+			%a{"data-toggle"=>"modal", :href=>"/job-roles/new", "data-target"=>"#newJobRoleModal"}
+				+ New Job Role

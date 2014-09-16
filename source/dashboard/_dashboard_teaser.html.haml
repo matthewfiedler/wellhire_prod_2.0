@@ -1,0 +1,28 @@
+.alert.alert-basic
+	%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+		&times;
+	.row.half-margin-top
+		.col-sm-6.margin-bottom
+			.row
+				.col-sm-3
+					=image_tag"/images/dashboard/teaser_testing.png", width:"70", :class=>"img-responsive"
+				.col-sm-9
+					%h3
+						Get Testing
+					%p
+						Place a test link in your job post now or assign new tests to your candidates.
+					%a.btn.btn-default.btn-lg.half-margin-right.half-margin-bottom{"data-toggle"=>"modal", :href=>"/tests/new", "data-target"=>"#newTestModalSelectTests"}
+						Assign a Test
+					%a.btn.btn-default.btn-lg.half-margin-bottom{"data-toggle"=>"modal", :href=>"/job-links/new", "data-target"=>"#newJobLinkModal"}
+						Create a Test Link
+		.col-sm-5
+			.row
+				.col-sm-3
+					=image_tag"/images/dashboard/teaser_candidates.png", width:"70", :class=>"img-responsive"
+				.col-sm-9
+					%h3
+						Manage Candidates
+					%p
+						Add new candidates. Manage your job roles and candidate information.
+					%a.btn.btn-primary.btn-lg.half-margin-bottom{:href=>"/candidates"}
+						Manage Candidates

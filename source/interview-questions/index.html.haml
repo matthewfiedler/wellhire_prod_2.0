@@ -1,0 +1,23 @@
+;;;
+
+"title": "Interview Questions", 
+"subnav_data": "tests_subnav",
+"description": "Create custom interview questions to...",
+"link_title": "Interview Questions",
+"iconclass": "fa-clipboard",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+				%a.btn.btn-primary.btn-lg{"data-toggle"=>"modal", :href=>"/interview-questions/new", "data-target"=>"#newInterviewQuestionModal"}
+					%i.fa.fa-plus-circle
+					New Interview Questions
+		.row
+			.col-lg-12
+				=partial "/interview-questions/interview_questions_table"

@@ -1,0 +1,26 @@
+;;;
+
+"title": "Test Results", 
+"subnav_data": "results_subnav",
+"description": "Export your reports to Excel, CSV, and XML for integration with your back-office software.",
+"link_title": "+ New Job Role",
+"iconclass": "fa-bar-chart-o",
+"activeclass": "results"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				=partial "shared/subnav_with_links"
+		.row
+			.col-lg-12
+				=partial "/results/results_table"
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Top Candidates
+				=partial"/shared/top_candidates_table"

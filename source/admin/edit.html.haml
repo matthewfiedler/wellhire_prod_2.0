@@ -1,0 +1,25 @@
+;;;
+
+"title": "About This Candidate", 
+"subnav_data": "candidate_profile_subnav",
+"activeclass": "candidates"
+	
+;;;
+
+
+%section.no-padding-top
+	.container-fluid
+		.row
+			.col-lg-12
+				=partial"/shared/pager", locals:{link:"/admin",title:"Administration"}
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Review, Edit, and Add corporate members below
+				%p
+					Adding a new member account for a given company will automatically send an email notification to the new member.
+		.row
+			.col-lg-12
+				=partial"/admin/admin_table"
+			

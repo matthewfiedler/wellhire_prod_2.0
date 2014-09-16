@@ -1,0 +1,50 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog.modal-lg
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h1.modal-title 
+				Find and Assign Tests
+		.modal-body.no-padding
+			%section.invert-section.progress-indacator.hidden-xs
+				.padded
+					.col-sm-4
+						.text-center.stage
+							.label.label-success
+								1
+							%p.no-margin-bottom.text-uppercase.quarter-margin-top
+								%small
+									%span.step-text
+										%a{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/tests/new", "data-target"=>"#newTestModalSelectTests"}
+											Select Tests
+					.col-sm-4
+						.text-center.stage
+							.label.label-success
+								2
+							%p.no-margin-bottom.text-uppercase.quarter-margin-top
+								%small
+									%span.step-text.active
+										Select Candidates
+					.col-sm-4
+						.text-center.stage
+							.label.label-default
+								3
+							%p.no-margin-bottom.text-uppercase.quarter-margin-top
+								%small
+									%span.step-text
+										Freeform Questions
+					.clearfix
+			.padded
+				=partial"/tests/new/select_candidates_modal"
+		.modal-footer.no-margin-top
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal", type: "button"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/tests/new/step_3", "data-target"=>"#newTestModalFreeform"}
+				Continue

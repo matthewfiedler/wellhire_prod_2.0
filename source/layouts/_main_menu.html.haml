@@ -1,0 +1,55 @@
+%nav.navbar.navbar-default.navbar-fixed-top.main-nav{role: "navigation"}
+  / Brand and toggle get grouped for better mobile display
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "/dashboard"}
+        .logo.hidden-sm
+        .logo-sm.visible-sm
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-left
+        %li{:class => (current_page.data.activeclass === "dashboard") ? "active" : ""}
+          %a.navbar-item{href: "/dashboard"} 
+            %i.fa.fa-th-large
+            Dashboard
+        %li
+          %a.navbar-item{"data-toggle"=>"modal", :href=>"/job-links/new", "data-target"=>"#newJobLinkModal"}
+            %i.fa.fa-plus-circle
+            New Test Link
+        %li{:class => (current_page.data.activeclass === "candidates") ? "active" : ""}
+          %a.navbar-item{href: "/candidates"} 
+            %i.fa.fa-users
+            My Candidates
+        %li{:class => (current_page.data.activeclass === "tests") ? "active" : ""}
+          %a.navbar-item{href: "/tests"} 
+            %i.fa.fa-check
+            My Tests
+        %li{:class => (current_page.data.activeclass === "results") ? "active" : ""}
+          %a.navbar-item{href: "/results"} 
+            %i.fa.fa-bar-chart-o
+            Results
+        %li
+          %a.btn.btn-default{"data-toggle"=>"modal", :href=>"/tests/new", "data-target"=>"#newTestModalSelectTests"}
+            %i.fa.fa-plus-circle
+            Assign Tests
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle.navbar-item{"data-toggle" => "dropdown", href: "#"}
+            = image_tag ("no_avatar_sm.png"), :class=>"img-circle avatar-sm quarter-margin-right pull-left"
+            %span.hidden-md.hidden-sm
+              john@doe.com
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/account"} My Account
+            %li
+              %a{href: "/"} Sign Out
+            %li
+              %a{href: "/candidate_backend"} Candidate backend
+            %li
+              %a{href: "/admin"} Administration

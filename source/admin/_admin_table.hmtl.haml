@@ -1,0 +1,136 @@
+:javascript
+	$(document).ready(function() {
+
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+
+			column_number : 7, 
+			select_type: 'chosen', 
+			filter_container_id: "status_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Active:
+							#status_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Company
+				%th{"data-hide"=>"phone"}
+					Username/Email
+				%th{"data-hide"=>"phone"}
+					Password
+				%th{"data-hide"=>"phone"}
+					First Name
+				%th{"data-hide"=>"phone"}
+					Last Name
+				%th{"data-hide"=>"phone"}
+					Phone
+				%th{"data-hide"=>"phone"}
+					Company POC
+				%th{"data-hide"=>"phone"}
+					Status
+				%th{"data-hide"=>"phone"}
+					Date Registered
+				%th{"data-hide"=>"phone"}
+					Action
+		%tbody
+			%tr
+				%td
+					%select.form-control
+						%option
+							Company Name
+				%td
+					%input.form-control.input-sm
+				%td
+					%input.form-control.input-sm
+				%td
+					%input.form-control.input-sm
+				%td
+					%input.form-control.input-sm
+				%td
+					%input.form-control.input-sm
+				%td
+					%input{:type=>"checkbox"}
+				%td
+					''
+				%td
+					''
+				%td
+					%a.btn.btn-xs.btn-success{:href=>"#"} 
+						Create 
+			-20.times do
+				%tr
+					%td
+						PreHire INC
+					%td
+						cscordo@vmdsys.com
+					%td
+						************
+					%td
+						Chris
+					%td
+						Adminsco
+					%td
+						202-554-3321
+					%td
+						%input{:type=>"checkbox"}
+					%td.text-success
+						Active
+					%td
+						=lorem.date
+					%td
+						%a.btn.btn-xs.btn-info{:href=>"#"}
+							Edit 
+
+			%tfoot.hidden
+				%tr
+					%th
+						Company
+					%th{"data-hide"=>"phone"}
+						Username/Email
+					%th{"data-hide"=>"phone"}
+						Password
+					%th{"data-hide"=>"phone"}
+						First Name
+					%th{"data-hide"=>"phone"}
+						Last Name
+					%th{"data-hide"=>"phone"}
+						Phone
+					%th{"data-hide"=>"phone"}
+						Company POC
+					%th{"data-hide"=>"phone"}
+						Status
+					%th{"data-hide"=>"phone"}
+						Date Registered
+					%th{"data-hide"=>"phone"}
+						Action

@@ -1,0 +1,46 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+.modal-dialog.modal-lg
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h1.modal-title 
+				Is This Information Correct?
+		.modal-body
+			%dl.dl-horizontal
+				.half-margin-bottom
+					%dt
+						Candidate Email:
+					%dd#email_show
+
+				.half-margin-bottom
+					%dt
+						First Name:
+					%dd#first_name_show
+
+				.half-margin-bottom
+					%dt
+						Last Name:
+					%dd#last_name_show
+
+				.half-margin-bottom
+					%dt
+						Phone Number:
+					%dd#phone_show
+
+				.half-margin-bottom
+					%dt
+						Zip Code:
+					%dd#zip_show
+
+		.modal-footer.no-margin-top
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button", } 
+				Yes, Continue to the Assessment
+				%i.fa.fa-angle-double-right

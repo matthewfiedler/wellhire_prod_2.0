@@ -1,0 +1,49 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				Add Position
+		.modal-body
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Company Name
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Title
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Summary
+					.col-sm-7
+						%textarea.form-control{:rows=>"8"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Start Date
+					.col-sm-7
+						%input.form-control
+
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button" ,"data-toggle"=>"modal"} 
+				%i.fa.fa-plus-circle
+				Add Position

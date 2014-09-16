@@ -1,0 +1,13 @@
+<!doctype html>
+%html
+    %head
+        = partial "/layouts/main_scripts"
+    %body{:class => page_classes}
+        = partial "layouts/main_menu"
+        /end menu
+        = partial "shared/alert"
+
+        = yield
+        /end main content
+        = partial "layouts/footer"
+        /end footer

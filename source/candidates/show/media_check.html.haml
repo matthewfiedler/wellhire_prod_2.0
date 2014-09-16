@@ -1,0 +1,32 @@
+;;;
+
+"title": "Social Media Check", 
+"subnav_data": "candidate_profile_subnav",
+"activeclass": "candidates"
+	
+;;;
+
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				=partial"/shared/pager", locals:{link:"/candidates",title:"My Candidates"}
+				=partial"/candidates/show/candidate_profile_header"
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Media Check
+				-2.times do
+					.row.double-margin-bottom
+						.col-sm-2.col-sm-push-10
+							=image_tag"http://lh4.ggpht.com/-uFd8B_2gr0U/UnSU48_YI8I/AAAAAAAAALk/St4KpssAKic/bp.jpg",:class=>"img-responsive half-margin-top"
+						.col-sm-10.col-sm-pull-2
+							%h4
+								Greater Los Angeles Area
+							%p.no-margin-bottom
+								Professional Profile & Networking - LinkedIn
+							%h5
+								Professional Profile & Networking - LinkedIn
+

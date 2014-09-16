@@ -1,0 +1,640 @@
+<div class='modal-dialog modal-lg'>
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+      <h1 class='modal-title'>
+        Find and Assign Tests
+      </h1>
+    </div>
+    <div class='modal-body no-padding'>
+      <section class='invert-section progress-indacator hidden-xs'>
+        <div class='padded'>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-success'>
+                1
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text active'>
+                    Select Tests
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-default'>
+                2
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    Select Candidates
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='col-sm-4'>
+            <div class='text-center stage'>
+              <div class='label label-default'>
+                3
+              </div>
+              <p class='no-margin-bottom text-uppercase quarter-margin-top'>
+                <small>
+                  <span class='step-text'>
+                    Freeform Questions
+                  </span>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+      </section>
+      <div class='padded'>
+        <div class='margin-bottom clearfix'>
+          <div class='page-header'>
+            <h2>
+              1. Select your desired tests.
+            </h2>
+            <p class='no-margin-bottom'>
+              Select the tests you would like to assign to one or more candidates.
+            </p>
+          </div>
+          <script>
+            $(document).ready(function() {
+            
+            	$('.popover-filter-toggle-2').click(function() {
+            		$('.wh-popover-filter-inner-2').toggleClass('hidden');
+            		return false; 
+            	});
+            
+            	$("#clear-popover-filter-2").click(function() {
+            		$('.wh-popover-filter-inner-2 .yadcf-filter-reset-button').click();
+            		return false; 
+            	});
+            
+            	$('table').footable();
+            
+            
+            	var whDatatable = $('#table3').dataTable({
+            		'iDisplayLength': 23,
+            		'bPaginate': false,
+            		'bInfo': false
+            	}).yadcf([{
+            		column_number : 1,
+            		filter_container_id: 'type3_filter_container',
+            		filter_default_label:"Select a Type", 
+            	}]);
+            
+            } );
+          </script>
+          <div class='clearfix' style='position:relative;'>
+            <div class='wh-table-filter-wrapper pull-left hidden-xs'>
+              <button class='popover-filter-toggle-2 wh-table-filter-button btn btn-info' rel='popover'>
+                Filter
+                <span class='caret'></span>
+              </button>
+              <div class='right popover hidden wh-popover-filter-inner-2 wh-filter-show wh-filter-inner full-width' style='display:block; top:50px;'>
+                <div class='arrow' style='left:13%;'></div>
+                <div class='padded'>
+                  <div class='wh-filter-form-wrapper'>
+                    <form>
+                      <div class='form-group'>
+                        <label>
+                          Test Type:
+                        </label>
+                        <div id='type3_filter_container'></div>
+                      </div>
+                    </form>
+                  </div>
+                  <hr>
+                  <div class='clearfix'>
+                    <div class='pull-left'>
+                      <button class='btn btn-info' id='clear-popover-filter-2'>
+                        Reset
+                      </button>
+                    </div>
+                    <div class='pull-right'>
+                      <button class='btn btn-primary popover-filter-toggle-2'>
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='wh-table-search-wrapper pull-right'>
+              <input class='form-control wh-table-search' id='popover-filter-2' placeholder='Search'>
+            </div>
+          </div>
+          <div class='wh-table-wrapper'>
+            <table border='0' cellpadding='0' cellspacing='0' class='display table margin-top border-bottom' data-filter='#popover-filter-2' id='table3' width='100%'>
+              <thead>
+                <tr>
+                  <th>
+                    Test Title
+                  </th>
+                  <th data-hide='phone'>
+                    Type
+                  </th>
+                  <th data-hide='phone'>
+                    Time
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                      Business Communication II
+                    </a>
+                  </td>
+                  <td>
+                    Skillset
+                  </td>
+                  <td>
+                    20 Min
+                  </td>
+                  <td>
+                    <label class='btn btn-success'>
+                      <input id='option1' name='options' type='checkbox'>
+                        Select
+                      </input>
+                    </label>
+                  </td>
+                </tr>
+                <tfoot class='hidden'>
+                  <tr>
+                    <th>
+                      Test Title
+                    </th>
+                    <th>
+                      Type
+                    </th>
+                    <th>
+                      Time
+                    </th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal-footer no-margin-top'>
+      <a class='cursor-pointer half-margin-right' data-dismiss='modal' type='button'>
+        Cancel
+      </a>
+      <button class='btn btn-primary' data-dismiss='modal' data-target='#newTestModalSelectCandidates' data-toggle='modal' href='/tests/new/step_2'>
+        Continue
+      </button>
+    </div>
+  </div>
+</div>

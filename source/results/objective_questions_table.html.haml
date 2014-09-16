@@ -1,0 +1,30 @@
+.wh-table-wrapper
+	%table.display.table.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Responce
+				%th
+					Question
+				%th{"data-hide"=>"phone"}
+					Category
+		%tbody
+			-5.times do
+				%tr
+					%td
+						%h1.text-center.no-margin-bottom.text-success
+							%i.fa.fa-check-circle
+					%td
+						If an item is marked down from $2000 to $1800, what is the markdown percentage?
+					%td
+						Calculating Markup and Markdown Percentage
+			-5.times do
+				%tr
+					%td
+						%h1.text-center.no-margin-bottom.text-danger
+							%i.fa.fa-times-circle
+					%td
+						if an item is marked up from $100 to $115, what is the markup percentage?
+					%td
+						Calculating Markup and Markdown Percentage
+			

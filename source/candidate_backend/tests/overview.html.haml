@@ -1,0 +1,33 @@
+;;;
+
+"title": "Test: Business Essentials", 
+"layout": "candidate",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				=partial"/candidate_backend/tests/test_in_prog_header"
+				.test-question-container.margin-top
+					.margin-bottom
+						%p
+							Overview
+						%h4
+							Review Questions Before Submitting
+					.test-answers-overview.margin-bottom
+						=partial"/candidate_backend/tests/overview_table"
+				.test-footer
+					.row
+						.col-sm-4
+						.col-sm-8
+							%p.pull-right
+								%button.btn.btn-lg.btn-success.margin-bottom{"data-toggle"=>"modal", "data-target"=>"#confirmSubmitModal"}
+									Submit Responses
+									%i.fa.fa-long-arrow-right
+
+				
+

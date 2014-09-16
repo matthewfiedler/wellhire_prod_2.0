@@ -1,0 +1,156 @@
+:javascript
+	$(document).ready(function() {
+
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+			column_number : 0,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_default_label:"Select a Name", 
+			filter_container_id: "name_filter_container"
+		}, {
+			column_number : 1, 
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_container_id: "title_filter_container"
+		}, {
+			column_number : 2, 
+			select_type: 'chosen', 
+			filter_container_id: "job_role_filter_container"
+		}, {
+			column_number : 3, 
+			select_type: 'chosen', 
+			filter_container_id: "status_filter_container"
+		}, {
+			column_number : 4, 
+			filter_type: "date",date_format: "D M dd, yy", 
+			filter_container_id: "date_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Candidate Name:
+							#name_filter_container
+						.form-group
+							%label
+								Test Title:
+							#title_filter_container
+						.form-group
+							%label
+								Job Role:
+							#job_role_filter_container
+						.form-group
+							%label
+								Ststus:
+							#status_filter_container
+						.form-group
+							%label
+								Date Created:
+							#date_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Assigned To
+				%th
+					Test Title
+				%th{"data-hide"=>"phone"}
+					Job Role
+				%th{"data-hide"=>"phone"}
+					Status
+				%th{"data-hide"=>"phone"}
+					Date Assigned
+				%th{"data-hide"=>"phone"}
+					Actions
+		%tbody
+			%tr
+				%td
+					=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+					%a{:href=>"/candidates/show/tests_completed"}
+						= lorem.name
+					%a.half-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+						%i.fa.fa-envelope-o
+					%a.half-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+						%i.fa.fa-video-camera.fancybox-media{:href=>"http://www.youtube.com/watch?v=opj24KnzrWo"}
+				%td
+					%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+						Business Communication II
+				%td
+					Designer
+				%td.text-success
+					Complete
+				%td
+					Wed Feb 26, 2014
+				%td
+					%a.btn.btn-xs.btn-success{:href=>"/candidates/show"} 
+						View Test Results
+			%tr
+				%td
+					=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+					%a{:href=>"/candidates/show/tests_completed"}
+						= lorem.name
+					%a.half-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+						%i.fa.fa-envelope-o
+				%td
+					%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+						Business Communication II
+				%td
+					Designer
+				%td.text-warning
+					Pending
+				%td
+					Wed Feb 26, 2014
+				%td
+					.btn-group
+						%a.btn.btn-xs.btn-info{:href=>"onclick(return; false)","data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#sendCandidateReminderModal"} 
+							Send Reminder
+						%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
+							%span.caret
+							%span.sr-only Toggle Dropdown
+						%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+							%li
+								%a{href: "/"} 
+									Cancel Test
+			%tfoot.hidden
+				%tr
+					%th
+						Name
+					%th
+						Title
+					%th
+						Job Role
+					%th
+						Status
+					%th
+						Date Assigned
+					%th
+						Actions

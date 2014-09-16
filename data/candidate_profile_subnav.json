@@ -1,0 +1,19 @@
+{
+"link_title_list": [
+	  {"title":"About This Candidate", 
+	  	"link":"/candidates/show"
+	  },
+	  {"title":"Interview", 
+	  	"link":"/candidates/show/interview"
+	  },
+	  {"title":"Social Media Check", 
+	  	"link":"/candidates/show/media_check"
+	  },
+	  {"title":"Tests Completed", 
+	  	"link":"/candidates/show/tests_completed"
+	  },
+	  {"title":"All Videos", 
+	  	"link":"/candidates/show/all_videos"
+	  }
+	]
+}

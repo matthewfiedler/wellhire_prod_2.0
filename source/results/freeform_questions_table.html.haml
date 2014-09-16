@@ -1,0 +1,51 @@
+.wh-table-wrapper
+	%table.display.table.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Question
+				%th
+					Response
+				%th
+					Plagiarism Check
+				%th
+					Video Response
+		%tbody
+			%tr
+				%td
+					Please list and explain your biggest weakness.
+				%td
+					Woa! Good question...
+				%td.text-danger
+					%span.quarter-margin-right
+						High risk of plagiarism
+					%a.click-popover-link{href:"onclick:return false;","data-toggle"=>"popover" ,"data-container"=>"body", "data-placement"=>"top", "data-content"=>"(100%) of this response has a high risk of plagairism! ... Best Answer: The second paragraph states: We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights <a href='#''>http://view.copyscape.com</a>"}
+						%i.fa-info-circle.fa
+				%td.text-muted
+					No video to show
+			%tr
+				%td
+					Please list and explain your biggest weakness
+				%td
+					this should be an original response that is more than 15 words that should not result in plagiarism being detected at all whatsover
+				%td.text-success
+					%span.quarter-margin-right
+						Passed
+					%a.click-popover-link{href:"onclick:return false;","data-toggle"=>"popover" ,"data-container"=>"body", "data-placement"=>"top", "data-content"=>"This response has been verified as original"}
+						%i.fa-info-circle.fa
+				%td
+					=partial"shared/video_thumb"
+			%tr
+				%td
+					Please list and explain your biggest weakness
+				%td.text-muted
+					no text to show
+				%td.text-warning
+					%span.quarter-margin-right
+						no text to check
+					%a.click-popover-link{href:"onclick:return false;","data-toggle"=>"popover" ,"data-container"=>"body", "data-placement"=>"top", "data-content"=>"This response was answered in the form of a video"}
+						%i.fa-info-circle.fa
+				%td
+					=partial"shared/video_thumb"
+
+			

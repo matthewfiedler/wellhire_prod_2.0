@@ -1,0 +1,8 @@
+%meta{:charset => "utf-8"}
+%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+%meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+%title= data.page.title || "Wellhire Admin"
+= stylesheet_link_tag "lib/jquery-ui/jquery-ui-1.10.4.custom" , "lib/data-tables/jquery.dataTables","lib/chosen/chosen","lib/foo-table/footable.core", "lib/bootstrap/bootstrap","lib/bootstrapvalidator/bootstrapValidator.min" ,"lib/font-awesome/font-awesome","fancybox/jquery.fancybox","style"
+%link{href: "images/favicon.ico", rel: "shortcut icon"}
+/ %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
+= javascript_include_tag"jquery","lib/jquery-ui-1.10.4.custom.js","lib/bootstrap","lib/bootstrapValidator.min","lib/jquery.dataTables.yadcf","lib/chosen.jquery","lib/footable/footable","lib/footable/footable.filter","lib/jquery.dataTables","lib/datatables.bootstrap.pagination","lib/highcharts","jquery.fancybox.pack","helpers/jquery.fancybox-media","scripts"

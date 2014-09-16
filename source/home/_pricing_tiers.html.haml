@@ -1,0 +1,58 @@
+:javascript
+	$(document).ready(function(){
+		$('.price-selectable').click(function(){
+			$('.price-selectable').removeClass('price-selected');
+			$(this).addClass('price-selected');
+		});
+	});
+
+
+
+.row
+	-3.times do
+		.col-md-3
+			.double-margin-bottom.price-tier.price-selectable
+				.off-white-bg.padded.price-table.no-padding-bottom.margin-bottom.double-padding-top
+					.text-center
+						.margin-bottom
+							%h5
+								PLATINUM
+							%h1
+								$399
+							%p.light-font-name.half-margin-bottom
+								monthly
+						.clearfix
+				.white-bg.padded.double-padding-top
+					.row.margin-top
+						.col-lg-12.price-points
+							%p.text-center.border-bottom.padding-bottom
+								%span.text-uppercase.bold-font-name
+									UNLIMITED
+								Completed tests per month.
+	.col-md-3
+		.double-margin-bottom.price-tier.best-val.price-selectable
+			%p.text-center.best-val-label
+				Most Popular
+			.off-white-bg.padded.price-table.no-padding-bottom.margin-bottom.double-padding-top
+				.text-center
+					.margin-bottom
+						%h5
+							PLATINUM
+						%h1
+							$399
+						%p.light-font-name.half-margin-bottom
+							monthly
+					.clearfix
+			.white-bg.padded.double-padding-top
+				.row.margin-top
+					.col-lg-12.price-points
+						%p.text-center.border-bottom.padding-bottom
+							%span.text-uppercase.bold-font-name
+								UNLIMITED
+							Completed tests per month.
+						%p.text-center.border-bottom.padding-bottom
+							%span.text-uppercase.bold-font-name
+								NO CHARGE
+							For each additional test
+						%p.text-center.no-margin-bottom
+							Unleash the full power of Wellhire with unlimited testing!

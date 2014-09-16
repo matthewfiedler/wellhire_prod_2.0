@@ -1,0 +1,9 @@
+<!doctype html>
+%html
+    %head
+        = partial "/layouts/main_scripts"
+    %body{:class => page_classes}
+        = yield
+        /end main content
+        = partial "layouts/footer"
+        /end footer

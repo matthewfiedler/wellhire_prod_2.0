@@ -1,0 +1,23 @@
+;;;
+
+"title": "Test Assignments", 
+"subnav_data": "tests_subnav",
+"description": "This section displays all of the tests which have been assigned to candidates. Candidates who responded to assessments from your job postings are also presented below",
+"link_title": "+ Assign Tests",
+"iconclass": "fa-check",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+				%a.btn.btn-default.btn-lg{"data-toggle"=>"modal", :href=>"/tests/new", "data-target"=>"#newTestModalSelectTests"}
+					%i.fa.fa-plus-circle
+					Assign Tests
+		.row
+			.col-lg-12
+				=partial "/tests/tests_table"

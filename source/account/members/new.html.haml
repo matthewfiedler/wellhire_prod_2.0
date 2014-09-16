@@ -1,0 +1,62 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				New Corporate User
+		.modal-body
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						User Email
+					.col-sm-7
+						%input.form-control{placeholder: "Ex: john@doe.com"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Confirm User Email
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Temp Password
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						First Name
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Last Name
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Phone Number
+					.col-sm-7
+						%input.form-control
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				%i.fa.fa-plus-circle
+				Add Corporate User

@@ -1,0 +1,64 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				Add Degree
+		.modal-body
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						School
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Field of Study
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Description
+					.col-sm-7
+						%textarea.form-control{:rows=>"8"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Date Attended
+					.col-sm-7
+						.quarter-margin-top
+							%select
+								%option
+									2001
+								%option
+									2002
+								%option
+									2003
+							\-
+							%select
+								%option
+									2001
+								%option
+									2002
+								%option
+									2003
+
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button" ,"data-toggle"=>"modal"} 
+				%i.fa.fa-plus-circle
+				Add Degree

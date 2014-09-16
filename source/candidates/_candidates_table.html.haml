@@ -1,0 +1,140 @@
+:javascript
+	$(document).ready(function() {
+
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+			column_number : 0,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_default_label:"Select a Name", 
+			filter_container_id: "name_filter_container"
+		}, {
+			column_number : 1, 
+			select_type: 'chosen', 
+			filter_container_id: "type_filter_container"
+		}, {
+			column_number : 2, 
+			select_type: 'chosen', 
+			filter_container_id: "job_role_filter_container"
+		}, {
+			column_number : 5, 
+			filter_type: "date",date_format: "D M dd, yy", 
+			filter_container_id: "date_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Name:
+							#name_filter_container
+						.form-group
+							%label
+								Type:
+							#type_filter_container
+						.form-group
+							%label
+								Job Role:
+							#job_role_filter_container
+						.form-group
+							%label
+								Date Created:
+							#date_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Name
+				%th{"data-hide"=>"phone"}
+					Type
+				%th{"data-hide"=>"phone"}
+					Job Role
+				%th{"data-hide"=>"phone"}
+					Status
+				%th{"data-hide"=>"phone"}
+					Tests
+				%th{"data-hide"=>"phone"}
+					Date Created
+				%th{"data-hide"=>"phone"}
+					Actions
+		%tbody
+			- 20.times do
+				%tr
+					%td
+						=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+						%a{:href=>"/candidates/show"}
+							= lorem.name
+						%a.half-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+							%i.fa.fa-envelope-o
+						%a.half-margin-left.no-underline-link.fancybox-media{:href=>"http://www.youtube.com/watch?v=opj24KnzrWo"}
+							%i.fa.fa-video-camera
+					%td
+						Prehire
+					%td
+						Designer
+					%td.text-success
+						Active
+					%td
+						%a{:href=>"/candidates/show/tests_completed"}
+							4
+					%td
+						Wed Feb 26, 2014
+					%td
+						.btn-group
+							%a.btn.btn-xs.btn-info{:href=>"/candidates/show"} 
+								View 
+							%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
+								%span.caret
+								%span.sr-only Toggle Dropdown
+							%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+								%li
+									%a{href: "/candidates/show/tests_completed"} 
+										Completed Tests
+								%li
+									%a{"data-toggle"=>"modal", :href=>"/candidates/edit", "data-target"=>"#editCandidateModal"}
+										Edit
+								%li
+									%a{"data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#markCandidateInactiveModal"}
+										Mark as inactive
+			%tfoot.hidden
+				%tr
+					%th
+						Name
+					%th
+						Type
+					%th
+						Job Role
+					%th
+						Status
+					%th
+						Tests
+					%th
+						Date Created
+					%th
+						Actions

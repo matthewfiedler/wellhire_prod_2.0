@@ -1,0 +1,18 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+.modal-dialog
+	.modal-content
+		.modal-body.no-padding-bottom
+			.row
+				.col-sm-12
+					=partial"/shared/video"
+		.modal-footer
+			%a.cursor-pointer.half-margin-right.stop-button{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary.stop-button{"data-dismiss" => "modal", type: "button"} 
+				Save

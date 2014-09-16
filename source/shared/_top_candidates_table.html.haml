@@ -1,0 +1,70 @@
+:javascript
+	$(function () {
+	      $('#chart-container').highcharts({
+	          chart: {
+	              type: 'column'
+	          },
+	          title: {
+	              text: null
+	          },
+	          subtitle: {
+	              text: null
+	          },
+	          xAxis: {
+	              categories: ['John Doe', 'John Smith', 'Karen Renee', 'Kimmy Doe'],
+	              labels: {
+								formatter: function() { 
+								return "<a href='/candidates/show'>" + this.value + "</a>"; 
+								}, 
+									useHTML: true
+								},
+	              title: {
+	                  text: null
+	              }
+	          },
+	          yAxis: {
+	              min: 0,
+	              title: {
+	                  text: null,
+	                  align: 'high'
+	              },
+	              labels: {
+	                  overflow: 'justify'
+	              }
+	          },
+	          plotOptions: {
+	              bar: {
+	                  dataLabels: {
+	                      enabled: true
+	                  }
+	              }
+	          },
+	          legend: {
+	              layout: 'vertical',
+	              align: 'right',
+	              verticalAlign: 'top',
+	              x: -40,
+	              y: 100,
+	              floating: true,
+	              borderWidth: 1,
+	              backgroundColor: '#FFFFFF',
+	              shadow: true
+	          },
+	          credits: {
+	              enabled: false
+	          },
+	          series: [{
+	              name: 'Test Score %',
+	              data: [70, 60, 65, 50]
+	          }]
+	      });
+	  });
+%form.form-horizontal{role: "form"}
+	.form-group
+		%label.col-xs-6.control-label 
+			Select a Test:
+		.col-xs-6
+			%select.form-control
+				%option
+					Business Essentials II
+#chart-container

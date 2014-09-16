@@ -1,0 +1,119 @@
+:javascript
+	$(document).ready(function() {
+
+		$('.popover-filter-toggle-3').click(function() {
+			$('.wh-popover-filter-inner-3').toggleClass('hidden');
+			return false; 
+		});
+
+		$("#clear-popover-filter-3").click(function() {
+			$('.wh-popover-filter-inner-3 .yadcf-filter-reset-button').click();
+			return false; 
+		});
+
+		$('table').footable();
+
+
+		var whDatatable = $('#table4').dataTable({
+			'iDisplayLength': 23,
+			'bPaginate': false,
+			'bInfo': false
+		}).yadcf([{
+			column_number : 0,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_container_id: 'name3_filter_container',
+			filter_default_label:"Select a Candidate"
+		} , {
+			column_number : 1,
+			filter_container_id: 'type4_filter_container',
+			select_type: 'chosen', 
+			filter_default_label:"Select a Type"
+		} , {
+			column_number : 2,
+			filter_container_id: 'job_role3_filter_container',
+			select_type: 'chosen', 
+			filter_default_label:"Select a Job Role"
+		}]);
+
+	} );
+
+
+.clearfix{:style=>"position:relative;"}
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button.popover-filter-toggle-3.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.right.popover.hidden.wh-popover-filter-inner-3.wh-filter-show.wh-filter-inner.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form
+						.form-group
+							%label
+								Cndidate Name:
+							#name3_filter_container
+							%label
+								Type:
+							#type4_filter_container
+							%label
+								Job Role:
+							#job_role3_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-popover-filter-3
+							Reset
+					.pull-right
+						%button.btn.btn-primary.popover-filter-toggle-3
+							Close
+
+	.wh-table-search-wrapper.pull-right
+		%input#popover-filter-3.form-control.wh-table-search{:placeholder=>"Search"}
+
+.wh-table-wrapper{:style=>"min-height:300px;"}
+	%table#table4.display.table.margin-top.border-bottom{"data-filter"=>"#popover-filter-3", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Name
+				%th{"data-hide"=>"phone"}
+					Type
+				%th{"data-hide"=>"phone"}
+					Job Role
+				%th{"data-hide"=>"phone"}
+					Date Created
+				%th
+
+		%tbody
+			-23.times do
+				%tr
+					%td
+						=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+						= lorem.name
+						%a.half-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+							%i.fa.fa-envelope-o
+					%td
+						Prehire
+					%td
+						Not Specified
+					%td
+						=lorem.date
+					%td
+						%label.btn.btn-success
+							%input{:type=>"checkbox",:name=>"options", :id=>"option1"}
+								Select
+			%tfoot.hidden
+				%tr
+					%th
+						Name
+					%th
+						Type
+					%th
+						Job Role
+					%th
+						Date Created
+					%th
+

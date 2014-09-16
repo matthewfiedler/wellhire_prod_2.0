@@ -1,0 +1,78 @@
+;;;
+
+"title": "About This Candidate", 
+"subnav_data": "candidate_profile_subnav",
+"activeclass": "results"
+	
+;;;
+
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				=partial"/shared/pager", locals:{link:"/results",title:"All Results"}
+		.row
+			.col-lg-12
+				.page-header
+
+					%h1.no-margin-bottom
+						%span.half-margin-right
+							%small
+								%i.fa.fa-bar-chart-o
+						Test Results
+		.row.margin-bottom
+			.col-sm-6
+				%dl.dl-horizontal
+					%dt.margin-bottom
+						Test Name:
+					%dd.margin-bottom
+						%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+							Business Skills II
+					%dt.margin-bottom
+						Last taken on:
+					%dd.margin-bottom
+						Oct 13, 2013
+					%dt.margin-bottom
+						Test Candidate:
+					%dd.margin-bottom
+						=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+						%a{:href=>"/candidates/show"}
+							= lorem.name
+						%a.quarter-margin-left.no-underline-link{:href=>"mailto:john@doe.com;"}
+							%i.fa.fa-envelope-o
+			.col-sm-6
+				.row
+					.col-sm-4.border-right
+						%h5.text-uppercase.no-margin-bottom
+							Score
+						%h1.text-success
+							100%
+					.col-sm-4.border-right
+						%h5.text-uppercase.no-margin-bottom
+							Attempts
+						%h1
+							3
+					.col-sm-4
+						%h5.text-uppercase.no-margin-bottom
+							Average
+						%h1
+							66.67%
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Objective Test Questions
+				%p
+					Below are the candidate's resulting response for each question presented in this assessment. Please note that the questions below are sorted by Question Category, but the actual question sequence
+				=partial"/results/objective_questions_table" 
+				.page-header
+					%h3.no-margin-bottom
+						Freeform Test Questions
+				%p
+					Below are the candidate's response for each freeform question presented in this assessment.
+				=partial"/results/freeform_questions_table" 
+				
+
+
+				

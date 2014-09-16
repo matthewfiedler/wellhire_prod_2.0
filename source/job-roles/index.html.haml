@@ -1,0 +1,30 @@
+;;;
+
+"title": "Manage Job Roles", 
+"subnav_data": "candidate_subnav",
+"description": "Job Roles represent specific employment positions you would like to fill, and are assigned to Candidates.",
+"link_title": "+ New Job Role",
+"iconclass": "fa-briefcase",
+"activeclass": "candidates"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				.alert.alert-success
+					%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+						&times;
+					Job Role 
+					%strong
+						Designer
+					created.
+				=partial "/shared/subnav_with_links"
+				%a.btn.btn-primary.btn-lg{"data-toggle"=>"modal", :href=>"/job-roles/new", "data-target"=>"#newJobRoleModal"}
+					%i.fa.fa-plus-circle
+					New Job Role
+		.row
+			.col-lg-12
+				=partial "/job-roles/job_roles_table"

@@ -1,0 +1,56 @@
+:javascript
+	$(function () {
+	      $('#chart-container').highcharts({
+	          chart: {
+	              type: 'column'
+	          },
+	          title: {
+	              text: null
+	          },
+	          subtitle: {
+	              text: null
+	          },
+	          xAxis: {
+	              categories: ['Agile Estimation', 'ASP.Net 2.0 Concepts (LITE)', 'Basic Internet Concepts', 'Business Communication I'],
+	              title: {
+	                  text: null
+	              }
+	          },
+	          yAxis: {
+	              min: 0,
+	              title: {
+	                  text: null,
+	                  align: 'high'
+	              },
+	              labels: {
+	                  overflow: 'justify'
+	              }
+	          },
+	          plotOptions: {
+	              bar: {
+	                  dataLabels: {
+	                      enabled: true
+	                  }
+	              }
+	          },
+	          legend: {
+	              layout: 'vertical',
+	              align: 'right',
+	              verticalAlign: 'top',
+	              x: -40,
+	              y: 100,
+	              floating: true,
+	              borderWidth: 1,
+	              backgroundColor: '#FFFFFF',
+	              shadow: true
+	          },
+	          credits: {
+	              enabled: false
+	          },
+	          series: [{
+	              name: 'Test Score %',
+	              data: [70, 60, 65, 50]
+	          }]
+	      });
+	  });
+#chart-container

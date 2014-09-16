@@ -1,0 +1,38 @@
+;;;
+
+"layout": "public"
+
+;;;
+
+:javascript
+	$(document).ready(function(){
+
+		//page scroller call
+		$('#wrapper').pageScroller({
+
+	    navigation: 'li.scroller-link',
+	    scrollOffset: -50 ,
+	  animationSpeed: 1000  
+
+		});
+
+	});
+#wrapper
+	= partial "home/hero"
+	/end hero
+	= partial "home/how_it_works"
+	/end how it works
+	= partial "home/video"
+	/end video
+	= partial "home/job_tests"
+	/end job tests
+	= partial "home/features"
+	/end features
+	= partial "home/_included_features"
+	/end included features
+	= partial "home/pricing"
+	/end pricing
+	= partial "home/testimonials"
+	/end testimonials
+	= partial "home/demo"
+	/end demo

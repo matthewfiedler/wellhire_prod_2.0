@@ -1,0 +1,26 @@
+;;;
+
+"title": "All Videos", 
+"subnav_data": "candidate_profile_subnav",
+"activeclass": "candidates"
+	
+;;;
+
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				=partial"/shared/pager", locals:{link:"/candidates",title:"My Candidates"}
+				=partial"/candidates/show/candidate_profile_header"
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						John's Videos
+		.row
+			.col-lg-12
+				-20.times do
+					=partial"shared/video_thumb"
+
+

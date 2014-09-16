@@ -1,0 +1,68 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				Edit Candidate
+		.modal-body
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Candidate Email
+					.col-sm-7
+						%p.no-margin-bottom.text-muted{:style=>"margin-top:5px;"}
+							John@doe.com
+				.form-group
+					%label.col-sm-5.control-label
+						First Name
+					.col-sm-7
+						%input.form-control{value:"John"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Last Name
+					.col-sm-7
+						%input.form-control{value:"Doe"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Phone Number
+					.col-sm-7
+						%input.form-control{value:"999-333-0000"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Zip Code
+					.col-sm-7
+						%input.form-control{value:"80020"}
+				.form-group
+					%label.col-sm-5.control-label 
+						Candidate Type
+					.col-sm-7
+						%select.form-control
+							%option
+								Prehire
+							%option
+								Employee Development
+				.form-group
+					%label.col-sm-5.control-label 
+						job Role
+					.col-sm-7
+						%select.form-control.half-margin-bottom
+							%option
+								Not Specified
+						%a{ "data-toggle"=>"modal", :href=>"/job-roles/new", "data-target"=>"#newJobRoleModal"}
+							+ New Job Role
+		.modal-footer
+			%button.btn.btn-info.pull-left{"data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#markCandidateInactiveModal"}
+				Mark as Inactive
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				Save Changes
+

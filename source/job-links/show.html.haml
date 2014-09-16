@@ -1,0 +1,35 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				Test Link
+		.modal-body
+			%p
+				Copy the TestLink below in to your online ads. Visitors can then click on it to take your assessment. You'll be notified each time a new candidate completes an assessment
+			%form{role: "form"}
+				.form-group
+					%label.control-label
+						%i.fa.fa-link.primary-text-color
+						Link
+					%textarea.form-control.cursor-text.thick-border{:rows=>"2", :readonly=>"readonly"}
+						:escaped
+							http://www.wellhire.com/public/uiCandidateForm.aspx?tlID=31
+				.form-group
+					%label.control-label
+						%i.fa.fa-code.primary-text-color
+						Embed
+					%textarea.form-control.cursor-text.thick-border{:rows=>"5", :readonly=>"readonly"}
+						:escaped
+							<a href="http://www.wellhire.com/public/uiCandidateForm.aspx?tlID=31" target="newWin">Take this Job's Skill Assessment</a>
+		.modal-footer
+			%button.btn.btn-info.pull-left{"data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#markJobLinkInactiveModal"}
+				Deactivate

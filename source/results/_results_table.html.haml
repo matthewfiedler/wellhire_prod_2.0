@@ -1,0 +1,130 @@
+:javascript
+	$(document).ready(function() {
+
+		var whDatatable = $('#table').dataTable().yadcf([{
+			column_number : 0, 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_type: "date",date_format: "D M dd, yy", 
+			filter_container_id: "date_filter_container"
+		}, {
+			column_number : 1,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_default_label:"Select a Candidate", 
+			filter_container_id: "name_filter_container"
+		}, {
+			column_number : 2,
+			select_type: 'chosen', 
+			column_data_type: "html", 
+			html_data_type: "text",
+			filter_default_label:"Select a Test", 
+			filter_container_id: "test_filter_container"
+		}, {
+			column_number : 3, 
+			select_type: 'chosen', 
+			filter_container_id: "attempt_filter_container"
+		}]);
+
+	} );
+
+
+.margin-bottom.clearfix
+	.wh-table-filter-wrapper.pull-left.hidden-xs
+		%button#filter-popover.filter-toggle.wh-table-filter-button.btn.btn-info{:rel=>"popover"}
+			Filter
+			%span.caret
+
+		.bottom.popover.hidden.wh-filter-inner.wh-filter-show.full-width{:style=>"display:block; top:50px;"}
+			.arrow{:style=>"left:13%;"}
+			.padded
+				.wh-filter-form-wrapper
+					%form#wh-filter-form
+						.form-group
+							%label
+								Date Completed:
+							#date_filter_container
+						.form-group
+							%label
+								Candidate Name:
+							#name_filter_container
+						.form-group
+							%label
+								Test Name:
+							#test_filter_container
+						.form-group
+							%label
+								Attempts:
+							#attempt_filter_container
+				%hr
+				.clearfix
+					.pull-left
+						%button.btn.btn-info#clear-filter
+							Reset
+					.pull-right
+						%button.btn.btn-primary.filter-toggle{:onclick=>"return:false;"}
+							Close
+	.wh-table-search-wrapper.pull-right
+		%input#filter.form-control.wh-table-search{:placeholder=>"Search"}
+	.pull-right.margin-right
+		=partial"/shared/export_links"
+
+.wh-table-wrapper
+	%table#table.display.table.table-hover.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Date Completed
+				%th
+					Candidate
+				%th{"data-hide"=>"phone"}
+					Test Name
+				%th{"data-hide"=>"phone"}
+					Attempts
+				%th{"data-hide"=>"phone"}
+					Score
+				%th{"data-hide"=>"phone"}
+					Average
+				%th{"data-hide"=>"phone"}
+					Actions
+		%tbody
+			-5.times do
+				%tr
+					%td
+						%a{:href=>"/results/show"}
+							= lorem.date
+					%td
+						=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+						%a{:href=>"/candidates/show"}
+							= lorem.name
+							%a.half-margin-left.no-underline-link.fancybox-media{:href=>"http://www.youtube.com/watch?v=opj24KnzrWo"}
+								%i.fa.fa-video-camera
+					%td
+						%a{"data-toggle"=>"modal", :href=>"/tests/show", "data-target"=>"#showTestModal"}
+							Business Skills II
+					%td
+						1
+					%td
+						\%100
+					%td
+						\%60
+					%td
+						%a.btn.btn-xs.btn-success{:href=>"/results/show"}
+							View Result
+			%tfoot.hidden
+				%tr
+					%th
+						Date Completed
+					%th
+						Candidate
+					%th
+						Test Name
+					%th
+						Attempts
+					%th
+						Score
+					%th
+						Average
+					%th
+						Actions

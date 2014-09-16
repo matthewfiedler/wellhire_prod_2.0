@@ -1,0 +1,29 @@
+;;;
+
+"title": "Wellhire Test Links", 
+"subnav_data": "tests_subnav",
+"description": "Post a Wellhire job test anywhere you can paste a web link!  Wellhire will collect contact information from new job seekers and test their skills.  Deactivate a Wellhire Test Link at any time! Great for: Job postings, Newsletters, Text ads, <strong>Anywhere you can post a link!</strong> ",
+"link_title": "+ New Job Link",
+"iconclass": "fa-link",
+"activeclass": "tests"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				.alert.alert-success
+					%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+						&times;
+					New Job Link Created
+					%a{"data-toggle"=>"modal", :href=>"/job-links/show", "data-target"=>"#showJobLinkModal"} 
+						View Link
+				=partial "/shared/subnav_with_links"
+				%a.btn.btn-default.btn-lg{"data-toggle"=>"modal", :href=>"/job-links/new", "data-target"=>"#newJobLinkModal"}
+					%i.fa.fa-plus-circle
+					Create Test Link
+		.row
+			.col-lg-12
+				=partial "/job-links/job_links_table"

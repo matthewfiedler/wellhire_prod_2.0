@@ -1,0 +1,18 @@
+<!doctype html>
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %title= data.page.title || "Wellhire"
+    = stylesheet_link_tag "lib/bootstrap/bootstrap","lib/fancybox/jquery.fancybox.css","lib/royal-slider/royalslider","lib/royal-slider/rs-default","lib/font-awesome/font-awesome","lib/slider/slider","public"
+    %link{href: "images/favicon.ico", rel: "shortcut icon"}/
+    = javascript_include_tag"jquery", "lib/jquery.pagescroller.lite.js","lib/jquery.royalslider","jquery.fancybox.pack.js","helpers/jquery.fancybox-media.js"," lib/bootstrap","lib/bootstrap-slider", "public"
+  %body{:class => page_classes}
+    #tech-stars-banner.hidden-xs
+    = partial "layouts/main_menu_public"
+    /end menu
+    = yield
+    /end main content
+    = partial "layouts/footer_public"
+    /end footer

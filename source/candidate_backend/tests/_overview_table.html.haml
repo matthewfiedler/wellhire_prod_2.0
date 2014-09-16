@@ -1,0 +1,40 @@
+.wh-table-wrapper
+	%table.display.table.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Question
+				%th
+					Answered
+				%th{"data-hide"=>"phone"}
+					Marked for Review
+				%th
+
+		%tbody
+			%tr
+				%td
+					%h3.no-margin-bottom.text-success
+						1
+				%td
+					%h3.no-margin-bottom.text-success
+						%i.fa.fa-check-circle
+				%td
+					%h3.no-margin-bottom.text-success
+						%i.fa.fa-check-circle
+				%td.vert-align-center
+					%a.btn.btn-info.btn-sm{href:"/candidate_backend/tests/show"} 
+						Go to Question
+			%tr
+				%td
+					%h3.no-margin-bottom.text-success
+						2
+				%td
+					%h3.no-margin-bottom.text-success
+						%i.fa.fa-check-circle
+				%td
+					%h3.no-margin-bottom.text-success
+
+				%td.vert-align-center
+					%a.btn.btn-info.btn-sm{href:"/candidate_backend/tests/show"} 
+						Go to Question
+			

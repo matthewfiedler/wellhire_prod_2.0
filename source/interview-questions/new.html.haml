@@ -1,0 +1,25 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog.modal-lg
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h1.modal-title 
+				Create new interview questions
+		.modal-body
+			=partial"shared/select_job_role",:locals=>{:text=>"1. Select the Job Role you'd like to create interview questions for."}
+			.page-header
+				%p.no-margin-bottom
+					2. Create questions
+			=partial"shared/add_question"
+		.modal-footer.no-margin-top
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				Create questions

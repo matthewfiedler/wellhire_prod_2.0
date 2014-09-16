@@ -1,0 +1,26 @@
+.test-table-container
+	.test-th.padding-top.border-bottom
+		%h4.text-center
+			We Found
+			%span.green-text
+				31
+			Tests
+		%div.padding-bottom.full-width.pull-left
+			%p.pull-left.padding-left
+				%strong
+					Test Title
+			%p.pull-right.padding-right
+				%strong
+					Test Time
+	.test-table.table-responsive
+		%table.table.table-striped
+			%thead
+			%tbody
+				-20.times do
+					%tr
+						%td.padding-left
+							%i.icon-check.green-text.half-margin-right
+							%a{:href=>"","data-toggle"=>"modal", "data-target"=>"#myModal"}
+								Business Communication II
+						%td.text-right.padding-right
+							20 min

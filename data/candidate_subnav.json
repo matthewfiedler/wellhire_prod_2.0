@@ -1,0 +1,11 @@
+{
+"link_title_list": [
+	  {"title":"My Candidates", 
+	  	"link":"/candidates"
+	  },
+
+	  {"title":"Manage Job Roles", 
+	  	"link":"/job-roles"
+	  }
+	]
+}

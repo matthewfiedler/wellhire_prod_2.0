@@ -1,0 +1,29 @@
+%section.no-padding-top
+	%footer
+		.container
+			.row
+				.col-sm-12
+					.pull-left.padding-top.border-top.full-width
+						%nav
+							%ul.list-inline.pull-left.footer-nav
+								%li
+									© 2014 Wellhire All rights reserved.
+
+
+
+
+//modals
+
+//tests
+#showTestModal.modal.modal-scroll{"aria-hidden" => "true", role: "dialog"}
+#showTestModalNoStart.modal{"aria-hidden" => "true", role: "dialog"}
+#confirmSubmitModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "/shared/confirm_modal_with_link", :locals=>{:text =>"Are you sure you want to submit your answers?", :link=>"/candidate_backend/tests/freeform", :btnclass=>"btn-success", :confirm_btn_text=>"Submit"}
+
+
+//profile
+#newPositionModal.modal{"aria-hidden" => "true", role: "dialog"}
+#newDegreeModal.modal{"aria-hidden" => "true", role: "dialog"}
+
+
+#videoModal.modal{"aria-hidden" => "true", role: "dialog", "data-backdrop"=>"static"}

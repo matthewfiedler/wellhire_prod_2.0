@@ -1,0 +1,24 @@
+;;;
+
+"title": "Assessment Sign-In", 
+"layout": "blank"
+	
+;;;
+
+
+
+.panel-body
+	.page-header
+		%h1.no-margin-bottom
+			SSI Solutions Assessment Sign-in
+	.alert.alert-info
+		%strong
+			Please enter your information below before entering the assessment. 
+		Doing so will allow SSI Solutions to easily contact you following your assessment.
+	=partial"/candidate_backend/registrations/form"
+
+
+
+
+#confirmSignUpModal.modal{"aria-hidden" => "true", role: "dialog"}
+	=partial "candidate_backend/registrations/confirm_modal"

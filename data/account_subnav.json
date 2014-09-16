@@ -1,0 +1,15 @@
+{
+"link_title_list": [
+	  {"title":"Account Activity", 
+	  	"link":"/account/"
+	  },
+
+	  {"title":"Members", 
+	  	"link":"/account/members/"
+	  },
+	  
+	 	{"title":"My Profile", 
+	  	"link":"/account/my_account"
+	  }
+	]
+}

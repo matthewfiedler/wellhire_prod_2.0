@@ -1,0 +1,130 @@
+<div class='modal-dialog'>
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+      <h2 class='modal-title'>
+        New Candidate
+      </h2>
+    </div>
+    <div class='modal-body'>
+      <div class='alert alert-danger'>
+        <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+          &times;
+        </button>
+        <strong>
+          Opps!
+        </strong>
+        Please correct the following errors:
+        <br>
+        <small>
+          • Enter a first name
+        </small>
+        <br>
+        <small>
+          • Enter a last name
+        </small>
+      </div>
+      <form class='form-horizontal' role='form'>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            <span class='text-danger'>
+              *
+            </span>
+            Candidate Email
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control' placeholder='Ex: john@doe.com'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            <span class='text-danger'>
+              *
+            </span>
+            Confirm Candidate Email
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            <span class='text-danger'>
+              *
+            </span>
+            First Name
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            <span class='text-danger'>
+              *
+            </span>
+            Last Name
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            Phone Number
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            Zip Code
+          </label>
+          <div class='col-sm-7'>
+            <input class='form-control'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            Candidate Type
+          </label>
+          <div class='col-sm-7'>
+            <select class='form-control'>
+              <option>
+                Prehire
+              </option>
+              <option>
+                Employee Development
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-5 control-label'>
+            job Role
+          </label>
+          <div class='col-sm-7'>
+            <select class='form-control half-margin-bottom'>
+              <option>
+                Not Specified
+              </option>
+            </select>
+            <a data-target='#newJobRoleModal' data-toggle='modal' href='/job-roles/new'>
+              + New Job Role
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class='modal-footer'>
+      <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+        Cancel
+      </a>
+      <button class='btn btn-primary' data-dismiss='modal' type='button'>
+        <i class='fa fa-plus-circle'></i>
+        Create Candidate
+      </button>
+    </div>
+  </div>
+</div>

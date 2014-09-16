@@ -1,0 +1,15 @@
+.wh-stream-item
+	.page-header.quarter-margin-bottom
+		.stream-item-date.pull-right
+			%p.text-muted
+				%small
+					Mar 1st
+		.stream-item-text
+			%p.no-margin-bottom
+				%i.fa.fa-clipboard.wh-stream-icon.primary-text-color.margin-right.hidden-xs
+				=image_tag "/images/no_avatar_sm.png", :class=>"half-margin-right avatar-sm img-circle"
+				%a{:href=>"/candidates/show"}
+					John Doe
+				answered/updated an
+				%a{:href=>"/candidates/show/interview"}
+					Interview question 

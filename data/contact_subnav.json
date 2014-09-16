@@ -1,0 +1,11 @@
+{
+"link_title_list": [
+	  {"title":"Contact", 
+	  	"link":"/contact"
+	  },
+
+	  {"title":"FAQs", 
+	  	"link":"/faqs"
+	  }
+	]
+}

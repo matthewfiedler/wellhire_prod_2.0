@@ -1,0 +1,91 @@
+;;;
+
+"title": "About This Candidate", 
+"subnav_data": "candidate_profile_subnav",
+"activeclass": "candidates"
+	
+;;;
+
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				=partial"/shared/pager", locals:{link:"/candidates",title:"My Candidates"}
+				=partial"/candidates/show/candidate_profile_header"
+		.row
+			.col-lg-12
+				%h4.margin-bottom
+					Powered By
+					%span.social-font-name{:style=>"font-size:2em; color:#069; position:relative; top:8px;"}
+						i
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Video
+					=partial"/shared/video_thumb"
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Summary
+					%p
+						Christopher Scordo (PMP, ITIL) is the Founder and Technical Director of SSI Logic, a team which specializes in the delivery of popular training courseware. At SSI Logic, Chris designs and develops the training content distributed through multiple publishing channels that include a portfolio of websites, mobile applications, published books, and enterprise training platforms. Christopher is the author of multiple books which prepare professionals for popular industry certifications. Training websites by SSI Logic include: PMTraining.com						
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Skills
+					%h3
+						-20.times do
+							%span.label.label-info.half-margin-right{:style=>"white-space: normal;"}
+								=lorem.words 1
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Expierence
+					-2.times do
+						.row.double-margin-bottom
+							.col-sm-2.col-sm-push-10
+								=image_tag"http://fineprintnyc.com/images/blog/history-of-apple-logo/apple-logo-2.jpg",:class=>"img-responsive half-margin-top"
+							.col-sm-10.col-sm-pull-2
+								%h4
+									Workforce Analyst
+								%p.no-margin-bottom
+									%a{:href=>"#"}
+										Apple computers
+								%h5
+									January 2013 – October 2013 (10 months) Greater New York City Area
+								%p
+									Responsible for overseeing all metric-based initiatives and driving efficient recruitment, training and management, preparing monthly data reports to be distributed company wide, analyzing metrics to identify top performers internally and externally, pension analysis, assessing turnover/providing objectives to reduce attrition rates
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Eudication
+					-2.times do
+						.row.double-margin-bottom
+							.col-sm-2.col-sm-push-10
+								=image_tag"http://msfhq.com/wp-content/uploads/2010/07/Baruch.jpg",:class=>"img-responsive half-margin-top"
+							.col-sm-10.col-sm-pull-2
+								%h4
+									%a{:href=>"#"}
+										Baruch College
+								%p.no-margin-bottom
+									Master of Science (M.S.), Candidate, Statistics
+								%h5
+									2013 – 2015 (expected)
+				.margin-bottom
+					.page-header
+						%h3.no-margin-bottom
+							Additional Info
+					.margin-bottom
+						%h4
+							Interests
+						%p
+							Music (Guitar), Technology, Psychology, Social Media, Scuba Diving, Traveling, Working, Branding, Website Design, Investing
+					.margin-bottom
+						%h4
+							Languages
+						%p
+							German, English
+
+
+				

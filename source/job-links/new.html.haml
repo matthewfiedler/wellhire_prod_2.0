@@ -1,0 +1,21 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog.modal-lg
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h1.modal-title 
+				Create a New Wellhire Test Link
+		.modal-body
+			=partial"/job-links/job_links_flow"
+		.modal-footer.no-margin-top
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				Create Link

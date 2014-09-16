@@ -1,0 +1,21 @@
+;;;
+
+"title": "Members", 
+"subnav_data": "account_subnav",
+"description": "These members are allowed to created candidates and assign tests as well. Tip: Only members marked as Active are able to log in to the system.",
+"iconclass": "fa-plus"
+	
+;;;
+
+
+%section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+				%a.btn.btn-primary.btn-lg{"data-toggle"=>"modal", :href=>"/account/members/new", "data-target"=>"#newMemberModal"}
+					%i.fa.fa-plus-circle
+					New Corporate User
+		.row
+			.col-lg-12
+				=partial "/account/members/members_table"

@@ -1,0 +1,39 @@
+#myModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+      .modal-body
+        .page-header.double-margin-bottom
+          %h2.text-uppercase.no-margin-bottom.primary-text-color
+            Business Communication II (LITE)
+        %p.text-muted
+          Business Communication measures knowledge of communicating in the workplace. It measures the skills necessary to communicate effectively with clients and coworkers at all levels.Subject areas covered in this assessment include:
+        %ul
+          %li
+            Basic Electronic Communication (E-mail, Fax, Teleconferencing, Voice Mail)
+          %li
+            Listening (Active Listening, Barriers, Benefits, Questions)
+          %li
+            Verbal Communication (Feedback, Instructions, Telephone)
+          %li
+            Written Communication (Letters, Memos, Reports)
+      .modal-footer
+        .col-sm-4
+          %h6.half-margin-bottom
+            Test Type
+          %h2.primary-text-color
+            Skillset
+        .col-sm-4
+          %h6.half-margin-bottom
+            QUESTIONS
+          %h2.primary-text-color
+            40
+        .col-sm-4
+          %h6.half-margin-bottom
+            TIME LIMIT
+          %h2.primary-text-color
+            60
+            %span.min-counter
+              min
+

@@ -1,0 +1,90 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h2.modal-title 
+				New Candidate
+		.modal-body
+			.alert.alert-danger
+				%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+					&times;
+				%strong
+					Opps!
+				Please correct the following errors:
+				%br
+				%small
+					• Enter a first name
+				%br
+				%small
+					• Enter a last name
+			%form.form-horizontal{role: "form"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Candidate Email
+					.col-sm-7
+						%input.form-control{placeholder: "Ex: john@doe.com"}
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Confirm Candidate Email
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						First Name
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						%span.text-danger
+							* 
+						Last Name
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Phone Number
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Zip Code
+					.col-sm-7
+						%input.form-control
+				.form-group
+					%label.col-sm-5.control-label 
+						Candidate Type
+					.col-sm-7
+						%select.form-control
+							%option
+								Prehire
+							%option
+								Employee Development
+				.form-group
+					%label.col-sm-5.control-label 
+						job Role
+					.col-sm-7
+						%select.form-control.half-margin-bottom
+							%option
+								Not Specified
+						%a{ "data-toggle"=>"modal", :href=>"/job-roles/new", "data-target"=>"#newJobRoleModal"}
+							+ New Job Role
+		.modal-footer
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+				Cancel
+			%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+				%i.fa.fa-plus-circle
+				Create Candidate

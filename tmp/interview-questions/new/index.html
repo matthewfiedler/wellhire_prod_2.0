@@ -1,0 +1,119 @@
+<div class='modal-dialog modal-lg'>
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+      <h1 class='modal-title'>
+        Create new interview questions
+      </h1>
+    </div>
+    <div class='modal-body'>
+      <div class='margin-bottom clearfix'>
+        <div class='page-header'>
+          <p class='no-margin-bottom'>
+            1. Select the Job Role you'd like to create interview questions for.
+          </p>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-2 control-label text-right'>
+            job Role:
+          </label>
+          <div class='col-sm-4'>
+            <select class='form-control half-margin-bottom input-sm'>
+              <option>
+                Designer
+              </option>
+              <option>
+                Other Option
+              </option>
+            </select>
+            <a data-target='#newJobRoleModal' data-toggle='modal' href='/job-roles/new'>
+              + New Job Role
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='page-header'>
+        <p class='no-margin-bottom'>
+          2. Create questions
+        </p>
+      </div>
+      <script>
+        $(document).ready(function(){
+         	//tooltips
+        	$('.wh-tooltip').tooltip();
+        });
+      </script>
+      <h5>
+        Add a Question
+      </h5>
+      <form class='form-horizontal' role='form'>
+        <div class='form-group'>
+          <label class='col-xs-3 control-label'>
+            Question:
+          </label>
+          <div class='col-xs-9'>
+            <input class='form-control half-margin-bottom'>
+            <a class='btn btn-default pull-right' href='onclick: return false;'>
+              Add Question
+            </a>
+            <div class='checkbox'>
+              <label>
+                <input type='checkbox'>
+                Allow video response
+                <i class='fa fa-question-circle wh-tooltip' data-toggle='tooltip' title='Candidates can respond to your question by typing or by recording a video.'></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <h5>
+        Manage Questions
+      </h5>
+      <div class='alert alert-basic'>
+        <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+          &times;
+        </button>
+        Why would you be the best candidate for this position?
+        <div class='checkbox'>
+          <label>
+            <input checked='' type='checkbox'>
+            Allow video response
+          </label>
+        </div>
+      </div>
+      <div class='alert alert-basic'>
+        <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+          &times;
+        </button>
+        Why would you be the best candidate for this position?
+        <div class='checkbox'>
+          <label>
+            <input checked='' type='checkbox'>
+            Allow video response
+          </label>
+        </div>
+      </div>
+      <div class='alert alert-basic'>
+        <button aria-hidden='true' class='close' data-dismiss='alert' type='button'>
+          &times;
+        </button>
+        Why would you be the best candidate for this position?
+        <div class='checkbox'>
+          <label>
+            <input checked='' type='checkbox'>
+            Allow video response
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class='modal-footer no-margin-top'>
+      <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+        Cancel
+      </a>
+      <button class='btn btn-primary' data-dismiss='modal' type='button'>
+        Create questions
+      </button>
+    </div>
+  </div>
+</div>

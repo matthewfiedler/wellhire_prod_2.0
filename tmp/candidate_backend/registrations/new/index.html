@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Assessment Sign-In</title>
+    <link href="../../../stylesheets/lib/jquery-ui/jquery-ui-1.10.4.custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/data-tables/jquery.dataTables.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/chosen/chosen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/foo-table/footable.core.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/bootstrap/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/bootstrapvalidator/bootstrapValidator.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/lib/font-awesome/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/fancybox/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
+    <script src="../../../javascripts/jquery.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/bootstrap.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/bootstrapValidator.min.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/jquery.dataTables.yadcf.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/chosen.jquery.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/footable/footable.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/footable/footable.filter.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/datatables.bootstrap.pagination.js" type="text/javascript"></script>
+    <script src="../../../javascripts/lib/highcharts.js" type="text/javascript"></script>
+    <script src="../../../javascripts/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="../../../javascripts/helpers/jquery.fancybox-media.js" type="text/javascript"></script>
+    <script src="../../../javascripts/scripts.js" type="text/javascript"></script>
+  </head>
+  <body class='candidate_backend candidate_backend_registrations candidate_backend_registrations_new candidate_backend_registrations_new_index no-padding-top' style='background-color:#f2f2f2;'>
+    <section>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-2'></div>
+          <div class='col-md-8'>
+            <div class='panel'>
+              <div class='panel-body'>
+                <div class='page-header'>
+                  <h1 class='no-margin-bottom'>
+                    SSI Solutions Assessment Sign-in
+                  </h1>
+                </div>
+                <div class='alert alert-info'>
+                  <strong>
+                    Please enter your information below before entering the assessment.
+                  </strong>
+                  Doing so will allow SSI Solutions to easily contact you following your assessment.
+                </div>
+                <script>
+                  $(document).ready(function() {
+                  
+                  
+                  	//setup the form validation
+                  
+                  	$('#candidateregisterform').bootstrapValidator({
+                  		message: 'This value is not valid',
+                  		feedbackIcons: {
+                  			valid: 'fa fa-check',
+                  			invalid: 'fa fa-times',
+                  			validating: 'fa fa-refresh'
+                  		},
+                  		fields: {
+                  			email: {
+                  				message: 'The email is not valid',
+                  				validators: {
+                  					notEmpty: {
+                  						message: 'Email is required and cannot be empty'
+                  					},
+                  					identical: {
+                  						field: 'email_confirm',
+                  						message: 'Please make sure the emails match'
+                  					},
+                  					emailAddress: {
+                  						message: 'The input is not a valid email address'
+                  					}
+                  				}
+                  			},
+                  			email_confirm: {
+                  				message: 'The email is not valid',
+                  				validators: {
+                  					notEmpty: {
+                  						message: 'Confirm email is required and cannot be empty'
+                  					},
+                  					identical: {
+                  						field: 'email',
+                  						message: 'Please make sure the emails match'
+                  					},
+                  					emailAddress: {
+                  						message: 'The input is not a valid email address'
+                  					}
+                  				}
+                  			},
+                  			first_name: {
+                  				message: 'The input is not valid',
+                  				validators: {
+                  					notEmpty: {
+                  						message: 'First Name is required and cannot be empty'
+                  					}
+                  				}
+                  			},
+                  			last_name: {
+                  				message: 'The input is not valid',
+                  				validators: {
+                  					notEmpty: {
+                  						message: 'Last Name is required and cannot be empty'
+                  					}
+                  				}
+                  			}
+                  		}
+                  	});
+                  
+                  	$('.confirm-button').click(function(){
+                  
+                  		if ($('#candidateregisterform').data('bootstrapValidator').isValid())
+                  	  {
+                  	  	//once things look good fire the modal
+                  			$('#confirmSignUpModal').modal('show');
+                  			return false;
+                  	  }
+                  	  else
+                  	  {
+                  	  	//if the form is incomplete show the user where
+                  		  $('#candidateregisterform').data('bootstrapValidator').validate();
+                  	  }
+                  
+                  	});
+                  
+                  
+                  	//make sure we show something if nothing is entered in phone and zip
+                  
+                  	var phoneInput = $('#phone').val();
+                  	if(phoneInput == ''){
+                  		$( "#phone_show" ).text( "not entered" );
+                  	}  
+                  
+                  	var zipInput = $('#zip').val();
+                  	if(phoneInput == ''){
+                  		$( "#zip_show" ).text( "not entered" );
+                  	}  
+                  
+                  	//display the input vals in the modal
+                  
+                  	$( "input#email" )
+                  	.keyup(function() {
+                  	var value = $( this ).val();
+                  	$( "#email_show" ).text( value );
+                  	})
+                  
+                  
+                  	$( "input#first_name" )
+                  	.keyup(function() {
+                  	var value = $( this ).val();
+                  	$( "#first_name_show" ).text( value );
+                  	})
+                  
+                  
+                  	$( "input#last_name" )
+                  	.keyup(function() {
+                  	var value = $( this ).val();
+                  	$( "#last_name_show" ).text( value );
+                  	})
+                  
+                  	$( "input#phone" )
+                  	.keyup(function() {
+                  	var value = $( this ).val();
+                  	$( "#phone_show" ).text( value );
+                  	})
+                  
+                  	$( "input#zip" )
+                  	.keyup(function() {
+                  	var value = $( this ).val();
+                  	$( "#zip_show" ).text( value );
+                  	})
+                  
+                  
+                  });
+                </script>
+                <form class='form-horizontal' id='candidateregisterform' role='form'>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      <span class='text-danger'>
+                        *
+                      </span>
+                      Your Email
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='email' name='email' placeholder='Ex: john@doe.com' type='text'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      <span class='text-danger'>
+                        *
+                      </span>
+                      Confirm Email
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='email_confirm' name='email_confirm' placeholder='Ex: john@doe.com'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      <span class='text-danger'>
+                        *
+                      </span>
+                      First Name
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='first_name' name='first_name'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      <span class='text-danger'>
+                        *
+                      </span>
+                      Last Name
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='last_name' name='last_name'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      Phone Number
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='phone' name='phone' placeholder='Ex: 3334445555'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <label class='col-sm-3 control-label'>
+                      Zip Code
+                    </label>
+                    <div class='col-sm-9'>
+                      <input class='form-control' id='zip' name='zip'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <p>
+                        <small>
+                          Once you confirm your information, we'll send a PIN to your email address should you need to return in the future. Check your junk mail for a message from Wellhire Support in the event you do not receive it immediately.
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <!-- %a.btn.btn-primary.pull-right{:type=>"submit","data-toggle"=>"modal", "data-target"=>"#confirmSignUpModal"} -->
+                      <button class='btn btn-primary pull-right confirm-button' type='submit'>
+                        Review & Confirm
+                        <i class='fa fa-angle-double-right'></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div aria-hidden='true' class='modal' id='confirmSignUpModal' role='dialog'>
+                <div class='modal-dialog modal-lg'>
+                  <div class='modal-content'>
+                    <div class='modal-header'>
+                      <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+                      <h1 class='modal-title'>
+                        Is This Information Correct?
+                      </h1>
+                    </div>
+                    <div class='modal-body'>
+                      <dl class='dl-horizontal'>
+                        <div class='half-margin-bottom'>
+                          <dt>
+                            Candidate Email:
+                          </dt>
+                          <dd id='email_show'></dd>
+                        </div>
+                        <div class='half-margin-bottom'>
+                          <dt>
+                            First Name:
+                          </dt>
+                          <dd id='first_name_show'></dd>
+                        </div>
+                        <div class='half-margin-bottom'>
+                          <dt>
+                            Last Name:
+                          </dt>
+                          <dd id='last_name_show'></dd>
+                        </div>
+                        <div class='half-margin-bottom'>
+                          <dt>
+                            Phone Number:
+                          </dt>
+                          <dd id='phone_show'></dd>
+                        </div>
+                        <div class='half-margin-bottom'>
+                          <dt>
+                            Zip Code:
+                          </dt>
+                          <dd id='zip_show'></dd>
+                        </div>
+                      </dl>
+                    </div>
+                    <div class='modal-footer no-margin-top'>
+                      <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+                        Cancel
+                      </a>
+                      <button class='btn btn-primary' data-dismiss='modal' type='button'>
+                        Yes, Continue to the Assessment
+                        <i class='fa fa-angle-double-right'></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-2'></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

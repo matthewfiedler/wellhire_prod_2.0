@@ -1,0 +1,24 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+.modal-dialog.modal-lg
+	.modal-content
+		.modal-header
+			%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+			%h1.modal-title 
+				Business Communication II
+		.modal-body
+			.alert.alert-info.no-margin-top
+				%i.fa.fa-clock-o.alert-icon
+				%strong
+					Heads Up! 
+				During the test, you will be provided with a live timer indicating how much time is remaining.
+			=partial"/shared/test_show_content"
+		.modal-footer.no-margin-top
+			%a.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} Cancel
+			%a.btn.btn-success{href:"/candidate_backend/tests/show"} Start Test

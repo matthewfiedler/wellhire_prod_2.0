@@ -1,0 +1,10 @@
+{
+"link_title_list": [
+	  {"title":"Dashboard", 
+	  	"link":"/dashboard"
+	  },
+	  {"title":"Activity", 
+	  	"link":"/dashboard/activity"
+	  }
+	]
+}

@@ -1,0 +1,176 @@
+;;;
+
+"layout": "public"
+
+;;;
+
+:javascript
+	$(document).ready(function(){
+
+		$('.slider').slider().on('slide', function(ev){
+
+			var val = $(this).data('slider').getValue();
+			console.log(val);
+
+			$(this).closest('.row').find('.progress-value').empty();
+			$(this).closest('.row').find('.progress-value').append( val);
+
+
+
+		});
+
+
+	});
+
+
+%section.padding-top{:style=>"background-color:#f2f2f2;"}
+	.container
+		.row
+			.col-md-2
+			.col-md-8
+				.panel.pricing-calculator
+					.panel-heading
+						%h4.no-margin-bottom
+							Wellhire Pricing Calculator
+					.panel-body
+						.padded
+							%h5
+								On a monthly basis...
+							.slider-question.double-margin-bottom
+								%p
+									What number of job openings (on average) does your team recruit for? 
+								.row
+									.col-xs-1.text-right
+										%b.half-margin-right
+											0
+									.col-xs-8
+										%input.span2.slider.full-width{"data-slider-max" => "100", "data-slider-min" => "0", "data-slider-orientation" => "horizontal", "data-slider-selection" => "after", "data-slider-step" => "5", "data-slider-tooltip" => "show", "data-slider-value" => "0", type: "text", value: ""}
+									.col-xs-1
+										%b.half-margin-left.progress-value
+											
+							.slider-question.double-margin-bottom
+								%p
+									What number of job interviews does your team conduct?
+								.row
+									.col-xs-1.text-right
+										%b.half-margin-right
+											0
+									.col-xs-8
+										%input.span2.slider.full-width{"data-slider-max" => "100", "data-slider-min" => "0", "data-slider-orientation" => "horizontal", "data-slider-selection" => "after", "data-slider-step" => "5", "data-slider-tooltip" => "show", "data-slider-value" => "0", type: "text", value: ""}
+									.col-xs-1
+										%b.half-margin-left.progress-value
+											
+							.slider-question.double-margin-bottom
+								%p
+									How many job applications and/or resumes do you receive?
+								.row
+									.col-xs-1.text-right
+										%b.half-margin-right
+											0
+									.col-xs-8
+										%input.span2.slider.full-width{"data-slider-max" => "100", "data-slider-min" => "0", "data-slider-orientation" => "horizontal", "data-slider-selection" => "after", "data-slider-step" => "5", "data-slider-tooltip" => "show", "data-slider-value" => "0", type: "text", value: ""}
+									.col-xs-1
+										%b.half-margin-left.progress-value.progress-value
+											
+							.slider-question.double-margin-bottom
+								%p
+									How many different job roles does your team recruit for?
+								.row
+									.col-xs-1.text-right
+										%b.half-margin-right
+											0
+									.col-xs-8
+										%input.span2.slider.full-width{"data-slider-max" => "100", "data-slider-min" => "0", "data-slider-orientation" => "horizontal", "data-slider-selection" => "after", "data-slider-step" => "5", "data-slider-tooltip" => "show", "data-slider-value" => "0", type: "text", value: ""}
+									.col-xs-1
+										%b.half-margin-left.progress-value
+											
+							.slider-question.double-margin-bottom
+								%p
+									On average, how may days does it take for you to fill a position?
+								.row
+									.col-xs-1.text-right
+										%b.half-margin-right
+											0
+									.col-xs-8
+										%input.span2.slider.full-width{"data-slider-max" => "100", "data-slider-min" => "0", "data-slider-orientation" => "horizontal", "data-slider-selection" => "after", "data-slider-step" => "5", "data-slider-tooltip" => "show", "data-slider-value" => "0", type: "text", value: ""}
+									.col-xs-1
+										%b.half-margin-left.progress-value
+											
+							%hr
+								.text-center
+									%a.btn.btn-primary{:href=>"","data-toggle"=>"modal", "data-target"=>"#calculatorResultsModal"}
+										Calculate
+			.col-md-2
+
+#calculatorResultsModal.modal.fade{"aria-hidden" => "true", role: "dialog"}
+	.modal-dialog.modal-lg
+		.modal-content
+			.modal-header
+			.modal-body.no-padding-bottom
+				.page-header.margin-bottom.no-margin-top
+					%h5.text-uppercase.no-margin-bottom.primary-text-color
+						Wellhire can save your team:
+				%ul.list-unstyled
+					%li
+						%strong
+							X hours 
+						per month recruiting
+					%li
+						%strong
+							$X 
+						per month in hiring costs included with your Wellhire registration
+				%p.bold-font-name.primary-text-color
+					Included with your registration:
+				.row
+					.col-sm-6
+						%ul.list-unstyled
+							%li
+								%strong
+									Up to 50 
+								job tests each month
+							%li
+								%strong
+									Up to 25 
+								candidates each month
+							%li
+								%strong
+									Unlimited 
+								Wellhire candidate links each month
+							%li
+								%strong
+									Unlimited 
+								Video interviews
+					.col-sm-6
+						%ul.list-unstyled
+							%li
+								%strong
+									Unlimited 
+								freeform questions with any test (including video responses)
+							%li
+								View candidate background
+							%li
+								Automated resume processing
+							%li
+								%strong
+									Unlimited 
+								Social Media Background checks
+								Plagiarism detection
+			.modal-footer.padding-top.padding-bottom
+				%p.text-center
+					Register now for 
+					%span.text-success.extra-bold-font-name
+						$172.42 
+					per month
+					%span.extra-bold-font-name
+						Cancel any time.
+				%a.cursor-pointer.half-margin-right{:href=>"#","data-dismiss" => "modal"} 
+					Cancel
+				%button.btn.btn-primary{"data-dismiss" => "modal", type: "button"} 
+					Start free trial
+	
+
+
+
+
+							
+

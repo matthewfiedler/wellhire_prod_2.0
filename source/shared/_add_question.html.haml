@@ -1,0 +1,35 @@
+:javascript
+	$(document).ready(function(){
+	 	//tooltips
+		$('.wh-tooltip').tooltip();
+	});
+
+
+
+%h5
+	Add a Question
+%form.form-horizontal{role: "form"}
+	.form-group
+		%label.col-xs-3.control-label 
+			Question:
+		.col-xs-9
+			%input.form-control.half-margin-bottom
+			%a.btn.btn-default.pull-right{:href=>"onclick: return false;"}
+				Add Question
+			.checkbox
+				%label
+					%input{type: "checkbox"}/
+					Allow video response
+					%i.fa.fa-question-circle.wh-tooltip{"data-toggle"=>"tooltip", :title=>"Candidates can respond to your question by typing or by recording a video."}
+%hr
+%h5
+	Manage Questions
+-3.times do
+	.alert.alert-basic
+		%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+			&times;
+		Why would you be the best candidate for this position?
+		.checkbox
+			%label
+				%input{type: "checkbox", checked:""}
+				Allow video response

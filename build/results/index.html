@@ -1,0 +1,791 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>Test Results</title>
+    <link href="../stylesheets/lib/jquery-ui/jquery-ui-1.10.4.custom.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/lib/data-tables/jquery.dataTables.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/lib/chosen/chosen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/lib/foo-table/footable.core.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/lib/bootstrap/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/lib/font-awesome/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
+    <script src="../javascripts/jquery.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/bootstrap.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jquery.dataTables.yadcf.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/chosen.jquery.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/footable/footable.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/footable/footable.filter.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/datatables.bootstrap.pagination.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/highcharts.js" type="text/javascript"></script>
+    <script src="../javascripts/scripts.js" type="text/javascript"></script>
+  </head>
+  <body class='results results_index'>
+    <nav class='navbar navbar-default navbar-fixed-top main-nav' role='navigation'>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class='container'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='/'>
+            <div class='logo hidden-sm'></div>
+            <div class='logo-sm visible-sm'></div>
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <ul class='nav navbar-nav navbar-left'>
+            <li class=''>
+              <a class='navbar-item' href='/'>
+                <i class='fa fa-th-large'></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a class='navbar-item' data-target='#newJobLinkModal' data-toggle='modal' href='/job-links/new'>
+                <i class='fa fa-plus-circle'></i>
+                New Test Link
+              </a>
+            </li>
+            <li class=''>
+              <a class='navbar-item' href='/candidates'>
+                <i class='fa fa-users'></i>
+                My Candidates
+              </a>
+            </li>
+            <li class=''>
+              <a class='navbar-item' href='/tests'>
+                <i class='fa fa-check'></i>
+                My Tests
+              </a>
+            </li>
+            <li class='active'>
+              <a class='navbar-item' href='/results'>
+                <i class='fa fa-bar-chart-o'></i>
+                Results
+              </a>
+            </li>
+            <li>
+              <a class='btn btn-default' data-target='#newTestModalSelectTests' data-toggle='modal' href='/tests/new'>
+                <i class='fa fa-plus-circle'></i>
+                Assign Tests
+              </a>
+            </li>
+          </ul>
+          <ul class='nav navbar-nav navbar-right'>
+            <li class='dropdown'>
+              <a class='dropdown-toggle navbar-item' data-toggle='dropdown' href='#'>
+                <img class="img-circle avatar-sm quarter-margin-right pull-left" src="../images/no_avatar_sm.png" />
+                <span class='hidden-md hidden-sm'>
+                  john@doe.com
+                </span>
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/account'>My Account</a>
+                </li>
+                <li>
+                  <a href='#'>Sign Out</a>
+                </li>
+                <li>
+                  <a href='/candidate_backend'>Candidate backend</a>
+                </li>
+                <li>
+                  <a href='/admin'>Administration</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end menu -->
+    <!-- %section.no-padding-bottom -->
+    <!-- .container -->
+    <!-- .row -->
+    <!-- .col-sm-12 -->
+    <!-- .alert.alert-success.alert-dismissable -->
+    <!-- %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", type: "button"} -->
+    <!-- %small -->
+    <!-- × -->
+    <!-- %P.no-margin-bottom -->
+    <!-- %strong -->
+    <!-- Good Job! -->
+    <!-- You just did something amazing I think. Well played. -->
+    <section>
+      <div class='container'>
+        <div class='row margin-bottom'>
+          <div class='col-lg-12'>
+            <h1 class='main-page-header'>
+              <span class='half-margin-right'>
+                <small>
+                  <i class='fa fa-bar-chart-o'></i>
+                </small>
+              </span>
+              Test Results
+            </h1>
+            <div class='subnav'>
+              <div class='page-header inline-block full-width no-padding-bottom no-margin-bottom'>
+                <ul class='nav nav-pills navbar-right sub-nav-links'>
+                  <li class='active'>
+                    <a href='/results'>
+                      Test Results
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class='margin-bottom'>
+              Export your reports to Excel, CSV, and XML for integration with your back-office software.
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <script>
+              $(document).ready(function() {
+              
+              	var whDatatable = $('#table').dataTable().yadcf([{
+              		column_number : 0, 
+              		column_data_type: "html", 
+              		html_data_type: "text",
+              		filter_type: "date",date_format: "D M dd, yy", 
+              		filter_container_id: "date_filter_container"
+              	}, {
+              		column_number : 1,
+              		select_type: 'chosen', 
+              		column_data_type: "html", 
+              		html_data_type: "text",
+              		filter_default_label:"Select a Candidate", 
+              		filter_container_id: "name_filter_container"
+              	}, {
+              		column_number : 2,
+              		select_type: 'chosen', 
+              		column_data_type: "html", 
+              		html_data_type: "text",
+              		filter_default_label:"Select a Test", 
+              		filter_container_id: "test_filter_container"
+              	}, {
+              		column_number : 3, 
+              		select_type: 'chosen', 
+              		filter_container_id: "attempt_filter_container"
+              	}]);
+              
+              } );
+            </script>
+            <div class='margin-bottom clearfix'>
+              <div class='wh-table-filter-wrapper pull-left hidden-xs'>
+                <button class='filter-toggle wh-table-filter-button btn btn-info' id='filter-popover' rel='popover'>
+                  Filter
+                  <span class='caret'></span>
+                </button>
+                <div class='bottom popover hidden wh-filter-inner wh-filter-show full-width' style='display:block; top:50px;'>
+                  <div class='arrow' style='left:13%;'></div>
+                  <div class='padded'>
+                    <div class='wh-filter-form-wrapper'>
+                      <form id='wh-filter-form'>
+                        <div class='form-group'>
+                          <label>
+                            Date Completed:
+                          </label>
+                          <div id='date_filter_container'></div>
+                        </div>
+                        <div class='form-group'>
+                          <label>
+                            Candidate Name:
+                          </label>
+                          <div id='name_filter_container'></div>
+                        </div>
+                        <div class='form-group'>
+                          <label>
+                            Test Name:
+                          </label>
+                          <div id='test_filter_container'></div>
+                        </div>
+                        <div class='form-group'>
+                          <label>
+                            Attempts:
+                          </label>
+                          <div id='attempt_filter_container'></div>
+                        </div>
+                      </form>
+                    </div>
+                    <hr>
+                    <div class='clearfix'>
+                      <div class='pull-left'>
+                        <button class='btn btn-info' id='clear-filter'>
+                          Reset
+                        </button>
+                      </div>
+                      <div class='pull-right'>
+                        <button class='btn btn-primary filter-toggle' onclick='return:false;'>
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='wh-table-search-wrapper pull-right'>
+                <input class='form-control wh-table-search' id='filter' placeholder='Search'>
+              </div>
+              <div class='pull-right margin-right'>
+                <div class='btn-group quarter-margin-top'>
+                  <small>
+                    <a class='quarter-margin-right' href='#'>
+                      [XML]
+                    </a>
+                  </small>
+                  <small>
+                    <a class='quarter-margin-right' href='#'>
+                      [XCELL]
+                    </a>
+                  </small>
+                  <small>
+                    <a href='#'>
+                      [CSV]
+                    </a>
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class='wh-table-wrapper'>
+              <table border='0' cellpadding='0' cellspacing='0' class='display table table-hover margin-top border-bottom' data-filter='#filter' id='table' width='100%'>
+                <thead>
+                  <tr>
+                    <th>
+                      Date Completed
+                    </th>
+                    <th>
+                      Candidate
+                    </th>
+                    <th data-hide='phone'>
+                      Test Name
+                    </th>
+                    <th data-hide='phone'>
+                      Attempts
+                    </th>
+                    <th data-hide='phone'>
+                      Score
+                    </th>
+                    <th data-hide='phone'>
+                      Average
+                    </th>
+                    <th data-hide='phone'>
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a href='/results/show'>
+                        Wed Sep 09, 2009
+                      </a>
+                    </td>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../images/no_avatar_sm.png" />
+                      <a href='/candidates/show'>
+                        Skyler Underwood
+                      </a>
+                    </td>
+                    <td>
+                      <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                        Business Skills II
+                      </a>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      %100
+                    </td>
+                    <td>
+                      %60
+                    </td>
+                    <td>
+                      <a class='btn btn-xs btn-success' href='/results/show'>
+                        View Result
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/results/show'>
+                        Mon Dec 30, 2002
+                      </a>
+                    </td>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../images/no_avatar_sm.png" />
+                      <a href='/candidates/show'>
+                        Mohammed Eason
+                      </a>
+                    </td>
+                    <td>
+                      <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                        Business Skills II
+                      </a>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      %100
+                    </td>
+                    <td>
+                      %60
+                    </td>
+                    <td>
+                      <a class='btn btn-xs btn-success' href='/results/show'>
+                        View Result
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/results/show'>
+                        Tue May 27, 2003
+                      </a>
+                    </td>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../images/no_avatar_sm.png" />
+                      <a href='/candidates/show'>
+                        Vanessa Watson
+                      </a>
+                    </td>
+                    <td>
+                      <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                        Business Skills II
+                      </a>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      %100
+                    </td>
+                    <td>
+                      %60
+                    </td>
+                    <td>
+                      <a class='btn btn-xs btn-success' href='/results/show'>
+                        View Result
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/results/show'>
+                        Wed Feb 28, 2007
+                      </a>
+                    </td>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../images/no_avatar_sm.png" />
+                      <a href='/candidates/show'>
+                        Camila Robertson
+                      </a>
+                    </td>
+                    <td>
+                      <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                        Business Skills II
+                      </a>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      %100
+                    </td>
+                    <td>
+                      %60
+                    </td>
+                    <td>
+                      <a class='btn btn-xs btn-success' href='/results/show'>
+                        View Result
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href='/results/show'>
+                        Sun Aug 24, 2003
+                      </a>
+                    </td>
+                    <td>
+                      <img class="half-margin-right avatar-sm img-circle" src="../images/no_avatar_sm.png" />
+                      <a href='/candidates/show'>
+                        Raul Gray
+                      </a>
+                    </td>
+                    <td>
+                      <a data-target='#showTestModal' data-toggle='modal' href='/tests/show'>
+                        Business Skills II
+                      </a>
+                    </td>
+                    <td>
+                      1
+                    </td>
+                    <td>
+                      %100
+                    </td>
+                    <td>
+                      %60
+                    </td>
+                    <td>
+                      <a class='btn btn-xs btn-success' href='/results/show'>
+                        View Result
+                      </a>
+                    </td>
+                  </tr>
+                  <tfoot class='hidden'>
+                    <tr>
+                      <th>
+                        Date Completed
+                      </th>
+                      <th>
+                        Candidate
+                      </th>
+                      <th>
+                        Test Name
+                      </th>
+                      <th>
+                        Attempts
+                      </th>
+                      <th>
+                        Score
+                      </th>
+                      <th>
+                        Average
+                      </th>
+                      <th>
+                        Actions
+                      </th>
+                    </tr>
+                  </tfoot>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <div class='page-header'>
+              <h3 class='no-margin-bottom'>
+                Top Candidates
+              </h3>
+            </div>
+            <script>
+              $(function () {
+                    $('#chart-container').highcharts({
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: null
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        xAxis: {
+                            categories: ['John Doe', 'John Smith', 'Karen Renee', 'Kimmy Doe'],
+                            labels: {
+              							formatter: function() { 
+              							return "<a href='/candidates/show'>" + this.value + "</a>"; 
+              							}, 
+              								useHTML: true
+              							},
+                            title: {
+                                text: null
+                            }
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: null,
+                                align: 'high'
+                            },
+                            labels: {
+                                overflow: 'justify'
+                            }
+                        },
+                        plotOptions: {
+                            bar: {
+                                dataLabels: {
+                                    enabled: true
+                                }
+                            }
+                        },
+                        legend: {
+                            layout: 'vertical',
+                            align: 'right',
+                            verticalAlign: 'top',
+                            x: -40,
+                            y: 100,
+                            floating: true,
+                            borderWidth: 1,
+                            backgroundColor: '#FFFFFF',
+                            shadow: true
+                        },
+                        credits: {
+                            enabled: false
+                        },
+                        series: [{
+                            name: 'Test Score %',
+                            data: [70, 60, 65, 50]
+                        }]
+                    });
+                });
+            </script>
+            <form class='form-horizontal' role='form'>
+              <div class='form-group'>
+                <label class='col-xs-6 control-label'>
+                  Select a Test:
+                </label>
+                <div class='col-xs-6'>
+                  <select class='form-control'>
+                    <option>
+                      Business Essentials II
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div id='chart-container'></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main content -->
+    <section class='no-padding-top'>
+      <footer>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-sm-12'>
+              <div class='pull-left padding-top border-top full-width'>
+                <nav>
+                  <ul class='list-inline pull-left footer-nav'>
+                    <li>
+                      © 2014 Wellhire All rights reserved.
+                    </li>
+                    <li>
+                      <a data-target='#termsModal' data-toggle='modal' href='/info/terms'>
+                        Terms
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/contact'>
+                        Contact & Support
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/faqs'>
+                        FAQs
+                      </a>
+                    </li>
+                    <li>
+                      <a href='/account/'>
+                        My Account
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- /global -->
+    <div aria-hidden='true' class='modal fade' id='termsModal' role='dialog'></div>
+    <!-- /modals -->
+    <!-- /candidates -->
+    <div aria-hidden='true' class='modal front-modal' id='newCandidateModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='editCandidateModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='markCandidateInactiveModal' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Are you sure you want to mark candidate John Doe as inactive?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /job roles -->
+    <div aria-hidden='true' class='modal front-modal' id='newJobRoleModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='editJobRoleModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='removeJobRoleModalConfirm' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Are you sure you want to delete this job role?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /tests -->
+    <div aria-hidden='true' class='modal front-modal' id='showTestModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal-scroll modal' id='newTestModalSelectTests' role='dialog'></div>
+    <div aria-hidden='true' class='modal-scroll modal' id='newTestModalSelectCandidates' role='dialog'></div>
+    <div aria-hidden='true' class='modal-scroll modal' id='newTestModalFreeform' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='newTestModaReview' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='sendCandidateReminderModal' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Send ccandidate reminder?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /job links -->
+    <div aria-hidden='true' class='modal' id='showJobLinkModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='markJobLinkInactiveModal' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Are you sure you want to deactivate this job link?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden='true' class='modal modal-scroll' id='newJobLinkModal' role='dialog'></div>
+    <!-- /Account -->
+    <div aria-hidden='true' class='modal' id='cancelAccountModal' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Delete Account Confirm message?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /members -->
+    <div aria-hidden='true' class='modal' id='newMemberModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='editMemberModal' role='dialog'></div>
+    <div aria-hidden='true' class='modal' id='markMemberInactiveModal' role='dialog'>
+      <div class='modal-dialog modal-sm'>
+        <div class='modal-content'>
+          <div class='modal-body no-padding-bottom'>
+            <div class='row'>
+              <div class='col-sm-3'>
+                <i class='fa fa-exclamation-circle text-danger modal-icon half-margin-bottom'></i>
+              </div>
+              <div class='col-sm-9'>
+                <p class='no-margin-bottom'>
+                  Are you sure you want to mark member John Doe as inactive?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class='modal-footer'>
+            <a class='cursor-pointer half-margin-right' data-dismiss='modal'>
+              Cancel
+            </a>
+            <button class='btn btn-primary' data-dismiss='modal' type='button'>
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /payments -->
+    <div aria-hidden='true' class='modal' id='editPaymentModal' role='dialog'></div>
+    <!-- end footer -->
+  </body>
+</html>

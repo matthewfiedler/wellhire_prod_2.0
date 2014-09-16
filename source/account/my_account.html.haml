@@ -1,0 +1,76 @@
+;;;
+
+"title": "My Profile", 
+"subnav_data": "account_subnav",
+"description": "Below is the information we have stored for your account",
+"iconclass": "fa-gear"
+	
+;;;
+
+
+%section
+	.container
+		.row
+			.col-lg-12
+				=partial "/shared/subnav_with_links"
+		.row
+			.col-lg-12
+				.page-header
+					%h3.no-margin-bottom
+						Account Information for John doe
+		.row#acct-info-up
+			.col-sm-8
+				.double-margin-bottom
+					%p.double-margin-bottom
+						Basic Info
+					%form.form-horizontal{:role=>"form"}
+						/ email
+						.form-group
+							%lebel.col-sm-4.control-label
+								Username/Email
+							.col-sm-8
+								%input.form-control{:type=>"email", :readonly=>"readonly", :value=>"john@doe.com"}
+						/ password
+						.form-group
+							%lebel.col-sm-4.control-label
+								Password
+							.col-sm-8
+								%input.form-control.half-margin-bottom{:type=>"password", :readonly=>"readonly", :value=>"password"}
+								%a{:href=>"#"}
+									Change Password
+						.form-group
+							%lebel.col-sm-4.control-label
+								Primary Company POC
+							.col-sm-8
+								%input.half-margin-top{:type=>"checkbox"}
+						/ first name
+						.form-group
+							%lebel.col-sm-4.control-label
+								First Name
+							.col-sm-8
+								%input.form-control{:value=>"John"}
+						/ Last name
+						.form-group
+							%lebel.col-sm-4.control-label
+								Last Name
+							.col-sm-8
+								%input.form-control{:value=>"Doe"}
+						/ Phone
+						.form-group
+							%lebel.col-sm-4.control-label
+								Phone
+							.col-sm-8
+								%input.form-control
+						/ Date
+						.form-group
+							%lebel.col-sm-4.control-label
+								Date Registered
+							.col-sm-8
+								%p.quarter-margin-top
+									10/11/2013 3:02:16 PM
+					%button.btn.btn-primary.pull-right{:type=>"submit"}
+						Update Personal Info
+					%a.pull-right.text-danger.margin-right.quarter-margin-top{href:"onclick:return false;","data-dismiss" => "modal","data-toggle"=>"modal", "data-target"=>"#cancelAccountModal"}
+						Delete Account
+			.col-sm-1
+			.col-sm-3

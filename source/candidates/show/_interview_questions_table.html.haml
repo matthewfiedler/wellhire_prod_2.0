@@ -1,0 +1,33 @@
+.wh-table-wrapper
+	%table.display.table.margin-top.border-bottom{"data-filter"=>"#filter", border: "0", cellpadding: "0", cellspacing: "0", width: "100%"}
+		%thead
+			%tr
+				%th
+					Question
+				%th
+					Response
+				%th
+					Video
+
+		%tbody
+			%tr
+				%td
+					What is your favorite...
+				%td
+					Woa! Good question...Here's a video
+				%td
+					=partial"/shared/video_thumb"
+			%tr
+				%td
+					What is your favorite...
+				%td.text-muted
+					No text to show
+				%td
+					=partial"/shared/video_thumb"
+			%tr
+				%td
+					What is your favorite...
+				%td
+					I'm a nice answer that is extreamly impactful, intelligent and well throught out
+				%td.text-muted
+					No video 

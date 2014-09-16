@@ -1,0 +1,51 @@
+;;;
+
+"layout": "public"
+
+;;;
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				.page-header.double-margin-bottom
+					%h2.no-margin-bottom
+						Contact
+		.row
+			.col-lg-12
+				.text-center.double-margin-bottom
+					%h4
+						Please feel free to contact us below!
+					%p
+						If you are a member, please 
+						%a{:href=>"/log_in"}
+							log in 
+						first before contacting us to receive prioritized support.
+				.row
+					.col-md-3
+					.col-md-6
+						= partial "home/form_contact"
+					.col-md-3
+/end contact top
+%section.contact-map
+	.container
+		.row
+			.col-md-4
+			.col-md-4
+				.overlay-text.double-padded.text-center.contact-overlay
+					%h5.double-margin-bottom
+						2060 Broadway St
+						Boulder, CO 80302
+					%ul.social-nav.list-inline.text-center.no-padding
+						%li
+							%a{:href=>"#"}
+								l
+						%li
+							%a{:href=>"#"}
+								i
+						%li
+							%a{:href=>"#"}
+								f
+
+			.col-md-4
+/end contact bottom

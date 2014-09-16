@@ -1,0 +1,11 @@
+.margin-bottom.clearfix
+	.page-header
+		%h2
+			2. Select your desired candidates.
+		%p.no-margin-bottom
+			Select the appropriate candidates for your selected tests. Once assigned, your candidates will be notified of their tests via email
+	%a.btn.btn-primary.btn-lg{"data-toggle"=>"modal", :href=>"/candidates/new", "data-target"=>"#newCandidateModal"}
+		%i.fa.fa-plus-circle
+		New Candidate
+	.margin-top
+		=partial"/tests/new/select_candidates_table"
