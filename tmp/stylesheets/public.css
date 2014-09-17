@@ -48,7 +48,7 @@
   font-weight: normal;
   font-style: normal; }
 
-/* line 136, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 136, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 body {
   font: 100% "museo_sans_500regular", Helvetica, Arial, sans-serif;
   font-size: 15pt;
@@ -64,83 +64,83 @@ body {
   -webkit-font-smoothing: antialiased;
   zoom: 1; }
 
-/* line 154, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 154, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
-/* line 157, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 157, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   margin-bottom: 24px;
   color: #555555; }
 
-/* line 163, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 163, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h1 {
   font-family: "museo_sans_rounded700", Helvetica, Arial, sans-serif; }
 
-/* line 166, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 166, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h2 {
   font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif; }
 
-/* line 169, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 169, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h3 {
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
 
-/* line 172, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 172, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h4 {
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
 
-/* line 175, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 175, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h5 {
   font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif; }
 
-/* line 178, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 178, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h6 {
   font-family: "museo_sans_100regular", Helvetica, Arial, sans-serif; }
 
-/* line 182, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 182, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 p {
   font-size: .9em;
   line-height: 26.4px; }
 
-/* line 183, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 183, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h1 {
   font-size: 2.4em;
   line-height: 50.4px;
   color: #00445e; }
 
-/* line 184, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 184, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h2 {
   font-size: 1.8em;
   line-height: 40.8px; }
 
-/* line 185, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 185, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h3 {
   font-size: 1.8em;
   line-height: 40.8px;
   color: #00445e; }
 
-/* line 186, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 186, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h4 {
   font-size: 1.5em;
   line-height: 28.8px; }
 
-/* line 187, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 187, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h5 {
   font-size: 1em;
   line-height: 28.8px; }
 
-/* line 188, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 188, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h6 {
   font-size: 0.9em;
   line-height: 24px; }
 
-/* line 191, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 191, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 h1.jumbo-text {
   font-size: 5em;
   line-height: 72px; }
 
-/* line 197, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 197, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 blockquote {
   border: none;
   padding: 24px;
@@ -148,15 +148,15 @@ blockquote {
   line-height: 84px;
   font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif; }
 
-/* line 205, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 205, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .enhanced-font {
   font-size: 1.2em; }
 
-/* line 209, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 209, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-success {
   color: #8ec979; }
 
-/* line 213, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 213, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-line {
   width: 100%;
   height: 5px;
@@ -166,88 +166,88 @@ blockquote {
   position: relative;
   top: 20px; }
 
-/* line 225, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 225, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-columns-2 {
   -webkit-columns: 24px 2;
   -moz-columns: 24px 2;
   columns: 24px 2; }
 
-/* line 228, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 228, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-columns-3 {
   -webkit-columns: 24px 3;
   -moz-columns: 24px 3;
   columns: 24px 3; }
 
-/* line 231, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 231, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-columns-4 {
   -webkit-columns: 24px 4;
   -moz-columns: 24px 4;
   columns: 24px 4; }
 
-/* line 235, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 235, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .text-uppercase {
   text-transform: uppercase; }
 
-/* line 242, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 242, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .light-font-name {
   font-family: "museo_sans_100regular", Helvetica, Arial, sans-serif; }
 
-/* line 245, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 245, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .regular-font-name {
   font-family: "museo_sans_300regular", Helvetica, Arial, sans-serif; }
 
-/* line 248, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 248, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .medium-font-name {
   font-family: "museo_sans_500regular", Helvetica, Arial, sans-serif; }
 
-/* line 251, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 251, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .bold-font-name {
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif !important; }
 
-/* line 254, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 254, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .extra-bold-font-name {
   font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif; }
 
-/* line 258, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 258, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .social-font-name {
   font-family: "socialicoregular"; }
 
-/* line 263, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 263, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .primary-text-color {
   color: #0089bc !important; }
-  /* line 265, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 265, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .primary-text-color p {
     color: #0089bc !important; }
 
-/* line 270, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 270, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .secondary-text-color {
   color: #f47b2c !important; }
-  /* line 272, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 272, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .secondary-text-color p {
     color: #f47b2c !important; }
 
-/* line 278, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 278, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text h5, .white-text h6, .white-text p, .white-text a, .white-text blockquote {
   color: white !important; }
 
-/* line 283, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 283, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .green-text {
   color: #8ec979; }
 
-/* line 287, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 287, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .overlay-text {
   background-color: rgba(0, 0, 0, 0.7); }
-  /* line 289, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 289, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .overlay-text h1, .overlay-text h2, .overlay-text h3, .overlay-text h4, .overlay-text h5, .overlay-text h6, .overlay-text p, .overlay-text a {
     color: white; }
-  /* line 293, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 293, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .overlay-text.contact-overlay ul.social-nav {
     font-size: 3em; }
-    /* line 295, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 295, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .overlay-text.contact-overlay ul.social-nav li {
       padding: 0;
       margin: 0; }
-      /* line 298, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+      /* line 298, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
       .overlay-text.contact-overlay ul.social-nav li a {
         -webkit-transition-duration: 0.3s;
         -moz-transition-duration: 0.3s;
@@ -255,39 +255,39 @@ blockquote {
         -o-transition-duration: 0.3s;
         transition-duration: 0.3s;
         text-decoration: none; }
-        /* line 301, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+        /* line 301, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
         .overlay-text.contact-overlay ul.social-nav li a:hover {
           color: rgba(255, 255, 255, 0.5); }
 
-/* line 313, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 313, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .divider {
   display: block;
   height: 1px;
   background-color: #dddddd; }
 
-/* line 319, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 319, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .primary-bg {
   background: #0089bc; }
 
-/* line 323, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 323, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .secondary-bg {
   background: #f47b2c; }
 
-/* line 328, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 328, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .white-bg {
   background: white; }
-  /* line 330, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 330, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .white-bg h1, .white-bg h2, .white-bg h3, .white-bg h4, .white-bg h5, .white-bg p {
     color: #555555 !important; }
 
-/* line 335, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 335, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .off-white-bg {
   background: #f2f2f2; }
-  /* line 337, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 337, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .off-white-bg h1, .off-white-bg h2, .off-white-bg h3, .off-white-bg h4, .off-white-bg h5, .off-white-bg p {
     color: #555555 !important; }
 
-/* line 342, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 342, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .bg-cover {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -295,300 +295,300 @@ blockquote {
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 350, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 350, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .relative {
   position: relative; }
 
-/* line 354, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 354, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .hidden {
   display: none; }
 
-/* line 358, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 358, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .base-line-height {
   line-height: 24px; }
 
-/* line 362, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 362, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .full-width {
   width: 100%; }
 
-/* line 366, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 366, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .max-width {
   max-width: 100%; }
 
-/* line 370, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 370, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .display-block {
   display: block; }
 
-/* line 374, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 374, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 378, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 378, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .inline {
   display: inline; }
 
-/* line 382, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 382, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 ul.inline {
   list-style: none;
   margin-left: 0; }
-  /* line 385, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 385, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   ul.inline li {
     display: inline-block;
     padding: 0 5px; }
 
-/* line 392, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 392, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .border-top {
   border-top: 1px solid #dddddd; }
 
-/* line 395, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 395, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .border-right {
   border-right: 1px solid #dddddd; }
 
-/* line 398, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 398, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .border-bottom {
   border-bottom: 1px solid #dddddd; }
 
-/* line 401, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 401, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .border-left {
   border-left: 1px solid #dddddd; }
 
-/* line 408, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 408, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 ul.social-nav li {
   margin: 0;
   padding: 0; }
-  /* line 411, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 411, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   ul.social-nav li a {
     font-family: "socialicoregular"; }
 
-/* line 418, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 418, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin-auto {
   margin: 0 auto; }
 
-/* line 421, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 421, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin {
   margin: 24px !important; }
 
-/* line 424, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 424, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin-top {
   margin-top: 24px !important; }
 
-/* line 427, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 427, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin-right {
   margin-right: 24px !important; }
 
-/* line 430, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 430, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin-bottom {
   margin-bottom: 24px !important; }
 
-/* line 433, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 433, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .margin-left {
   margin-left: 24px !important; }
 
-/* line 436, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 436, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-margin-top {
   margin-top: 48px !important; }
 
-/* line 439, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 439, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-margin-right {
   margin-right: 48px !important; }
 
-/* line 442, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 442, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-margin-bottom {
   margin-bottom: 48px !important; }
 
-/* line 445, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 445, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-margin-left {
   margin-left: 48px !important; }
 
-/* line 448, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 448, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-margin-top {
   margin-top: 72px !important; }
 
-/* line 451, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 451, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-margin-right {
   margin-right: 72px !important; }
 
-/* line 454, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 454, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-margin-bottom {
   margin-bottom: 72px !important; }
 
-/* line 457, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 457, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-margin-left {
   margin-left: 72px !important; }
 
-/* line 460, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 460, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-margin-top {
   margin-top: 12px !important; }
 
-/* line 463, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 463, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-margin-right {
   margin-right: 12px !important; }
 
-/* line 466, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 466, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-margin-bottom {
   margin-bottom: 12px !important; }
 
-/* line 469, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 469, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-margin-left {
   margin-left: 12px !important; }
 
-/* line 472, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 472, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-margin-top {
   margin-top: 6px !important; }
 
-/* line 475, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 475, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-margin-right {
   margin-right: 6px !important; }
 
-/* line 478, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 478, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-margin-bottom {
   margin-bottom: 6px !important; }
 
-/* line 481, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 481, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-margin-left {
   margin-left: 6px !important; }
 
-/* line 484, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 484, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-margin {
   margin: 0px !important; }
 
-/* line 487, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 487, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-margin-top {
   margin-top: 0px !important; }
 
-/* line 490, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 490, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-margin-right {
   margin-right: 0px !important; }
 
-/* line 493, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 493, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-margin-bottom {
   margin-bottom: 0px !important; }
 
-/* line 496, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 496, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-margin-left {
   margin-left: 0px !important; }
 
-/* line 499, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 499, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .large-margin-top {
   margin-top: 72px !important; }
 
-/* line 504, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 504, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .padded {
   padding: 24px !important; }
 
-/* line 507, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 507, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .padding-top {
   padding-top: 24px !important; }
 
-/* line 510, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 510, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .padding-right {
   padding-right: 24px !important; }
 
-/* line 513, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 513, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .padding-bottom {
   padding-bottom: 24px !important; }
 
-/* line 516, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 516, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .padding-left {
   padding-left: 24px !important; }
 
-/* line 519, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 519, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-padded {
   padding: 48px !important; }
 
-/* line 522, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 522, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-padding-top {
   padding-top: 48px !important; }
 
-/* line 525, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 525, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-padding-right {
   padding-right: 48px !important; }
 
-/* line 528, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 528, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-padding-bottom {
   padding-bottom: 48px !important; }
 
-/* line 531, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 531, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .double-padding-left {
   padding-left: 48px !important; }
 
-/* line 534, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 534, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-padding-top {
   padding-top: 72px !important; }
 
-/* line 537, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 537, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-padding-right {
   padding-right: 72px !important; }
 
-/* line 540, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 540, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-padding-bottom {
   padding-bottom: 72px !important; }
 
-/* line 543, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 543, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .triple-padding-left {
   padding-left: 72px !important; }
 
-/* line 546, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 546, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-padding {
   padding: 0px !important; }
 
-/* line 549, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 549, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-padding-top {
   padding-top: 0px !important; }
 
-/* line 552, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 552, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-padding-right {
   padding-right: 0px !important; }
 
-/* line 555, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 555, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-padding-bottom {
   padding-bottom: 0px !important; }
 
-/* line 558, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 558, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .no-padding-left {
   padding-left: 0px !important; }
 
-/* line 561, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 561, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-padding {
   padding: 12px !important; }
 
-/* line 564, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 564, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-padding-top {
   padding-top: 12px !important; }
 
-/* line 567, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 567, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-padding-right {
   padding-right: 12px !important; }
 
-/* line 570, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 570, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-padding-bottom {
   padding-bottom: 12px !important; }
 
-/* line 573, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 573, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .half-padding-left {
   padding-left: 12px !important; }
 
-/* line 576, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 576, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-padding {
   padding: 6px !important; }
 
-/* line 579, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 579, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-padding-top {
   padding-top: 6px !important; }
 
-/* line 582, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 582, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-padding-right {
   padding-right: 6px !important; }
 
-/* line 585, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 585, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-padding-bottom {
   padding-bottom: 6px !important; }
 
-/* line 588, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 588, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .quarter-padding-left {
   padding-left: 6px !important; }
 
-/* line 595, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 595, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -597,40 +597,40 @@ ul.social-nav li {
   clear: both;
   height: 0; }
 
-/* line 603, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 603, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 * html .clearfix {
   zoom: 1; }
 
 /* IE6 */
-/* line 604, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 604, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 *:first-child + html .clearfix {
   zoom: 1; }
 
 /* IE7 */
-/* line 608, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 608, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .full-width-image {
   max-width: 100%;
   height: auto; }
 
-/* line 616, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 616, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 a {
   color: #0089bc;
   text-decoration: underline; }
-  /* line 619, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 619, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   a:hover {
     color: #00445e; }
-  /* line 622, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 622, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   a.white-link {
     color: white; }
-    /* line 624, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 624, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     a.white-link:hover {
       color: rgba(255, 255, 255, 0.7); }
-  /* line 628, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 628, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   a.no-decoration {
     text-decoration: none;
     display: block !important; }
 
-/* line 636, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 636, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .btn {
   text-decoration: none;
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
@@ -644,73 +644,77 @@ a {
   text-transform: uppercase;
   color: white !important;
   padding: 12px 24px; }
-  /* line 645, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 645, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .btn.btn-primary {
     background-color: #f47b2c;
     border-color: #f47b2c; }
-    /* line 648, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 648, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .btn.btn-primary:hover {
       border-color: #f69556 !important;
       background-color: #f69556 !important; }
-  /* line 653, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 653, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .btn.btn-default {
     background-color: #0089bc;
     border-color: #0089bc; }
-    /* line 656, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 656, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .btn.btn-default:hover {
       border-color: #0089bc;
       background-color: #006d96 !important; }
-  /* line 661, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 661, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .btn.btn-wire {
     color: white !important;
     border: 1px solid rgba(255, 255, 255, 0.5) !important;
     background-color: transparent !important; }
-    /* line 665, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 665, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .btn.btn-wire:hover {
       border-color: white !important; }
 
-/* line 671, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 671, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .btn-xl {
   padding: 24px 48px; }
 
-/* line 678, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 678, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 form textarea {
   font-size: 1em !important;
   font-family: "museo_sans_100regular", Helvetica, Arial, sans-serif; }
 
-/* line 691, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 691, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 section {
   padding: 96px 0; }
-  /* line 694, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
-  section.invert-section h1, section.invert-section h2, section.invert-section h3, section.invert-section h4, section.invert-section h5, section.invert-section h6, section.invert-section p {
+  /* line 694, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
+  section.invert-section h1, section.invert-section h2, section.invert-section h3, section.invert-section h4, section.invert-section h5, section.invert-section h6, section.invert-section p, section.invert-section li {
     color: white; }
-  /* line 699, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 699, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   section.contact-map {
     padding: 216px 0; }
-  /* line 703, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 703, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   section#how-it-works img {
     max-width: 200px; }
 
-/* line 711, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 711, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
+.navbar-nav > li > a {
+  padding-bottom: 25px; }
+
+/* line 715, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .navbar {
   padding: 12px 0;
   background-color: white; }
-  /* line 714, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 718, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .navbar ul.navbar-nav {
     padding-top: 12px; }
-    /* line 716, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 720, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .navbar ul.navbar-nav li {
       font-size: .7em;
       text-transform: uppercase; }
-      /* line 720, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+      /* line 724, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
       .navbar ul.navbar-nav li.active a {
         background: none;
         color: #0089bc; }
-        /* line 723, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+        /* line 727, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
         .navbar ul.navbar-nav li.active a:hover {
           background: none;
           color: #0089bc; }
-      /* line 729, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+      /* line 733, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
       .navbar ul.navbar-nav li a {
         -webkit-transition-duration: 0.3s;
         -moz-transition-duration: 0.3s;
@@ -718,18 +722,18 @@ section {
         -o-transition-duration: 0.3s;
         transition-duration: 0.3s;
         text-decoration: none; }
-        /* line 732, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+        /* line 736, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
         .navbar ul.navbar-nav li a:hover {
           color: #0089bc; }
-  /* line 738, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 742, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .navbar .btn {
     padding: 12px; }
-    /* line 740, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 744, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .navbar .btn.trial-btn {
       margin-left: 24px;
       margin-top: 0px; }
 
-/* line 747, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 751, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .logo {
   background: url(../images/public/logo.png) no-repeat;
   width: 174px;
@@ -740,40 +744,40 @@ section {
   -o-background-size: 100%;
   background-size: 100%; }
 
-/* line 756, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 760, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 footer {
   background-color: #0089bc;
   padding: 48px 0 24px 0; }
-  /* line 759, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 763, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   footer ul.footer-nav {
     margin-bottom: 24px;
     padding-bottom: 0; }
-    /* line 762, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 766, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     footer ul.footer-nav li {
       margin: 0;
       padding: 0;
       font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif;
       font-size: .7em;
       color: rgba(255, 255, 255, 0.5); }
-      /* line 768, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+      /* line 772, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
       footer ul.footer-nav li:after {
         content: " /";
         color: rgba(255, 255, 255, 0.5); }
-      /* line 773, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+      /* line 777, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
       footer ul.footer-nav li:last-child:after {
         content: ""; }
-  /* line 780, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 784, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   footer ul.footer-social-menu li {
     font-family: "socialicoregular";
     font-size: 2em;
     margin: 0;
     padding: 0; }
-    /* line 785, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 789, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     footer ul.footer-social-menu li a {
       text-transform: none;
       margin: 0;
       padding: 0; }
-  /* line 792, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 796, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   footer a {
     color: white;
     margin-right: 5px;
@@ -784,11 +788,11 @@ footer {
     -ms-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    /* line 798, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 802, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     footer a:hover {
       color: rgba(255, 255, 255, 0.6); }
 
-/* line 806, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 810, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #home-hero {
   background: url(../images/public/home_bg.jpg) #0089bc no-repeat fixed center top;
   -webkit-background-size: cover;
@@ -798,70 +802,70 @@ footer {
   background-size: cover;
   text-align: center;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
-  /* line 811, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 815, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #home-hero .btn {
     text-shadow: none; }
-  /* line 814, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 818, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #home-hero .hero-info {
     padding: 0 0 96px 0; }
-  /* line 817, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 821, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #home-hero .logos {
     background-color: #f2f2f2;
     padding: 48px 0; }
 
-/* line 823, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 827, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .highlight-hero-text {
   color: #ffd266;
   font-family: "museo_sans_700regular", Helvetica, Arial, sans-serif; }
 
-/* line 832, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 836, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .test-table-container {
   background-color: white;
   height: 500px;
   overflow: scroll; }
-  /* line 836, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 840, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .test-table-container h1, .test-table-container h2, .test-table-container h3, .test-table-container h4, .test-table-container h5, .test-table-container h6, .test-table-container p {
     color: #555555 !important; }
-  /* line 839, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 843, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .test-table-container .test-th {
     position: absolute;
     width: 100%;
     display: inline-table;
     background: white;
     z-index: 200; }
-  /* line 846, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 850, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .test-table-container .test-table {
     margin-top: 121px; }
-    /* line 851, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 855, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .test-table-container .test-table table tbody tr td {
       padding: 24px 0; }
 
-/* line 865, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 869, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .slider-container {
   overflow: hidden; }
 
-/* line 869, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 873, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #slider-in-laptop {
   width: 100%; }
 
-/* line 873, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 877, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #slider-in-laptop .rsPreloader {
   background-image: url(../preloaders/preloader-white.gif); }
 
-/* line 877, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 881, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .rsGCaption {
   margin-top: 5%;
   min-height: 200px; }
-  /* line 880, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 884, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsGCaption h3 {
     color: #f47b2c;
     font-family: "museo_sans_500regular", Helvetica, Arial, sans-serif; }
 
-/* line 886, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 890, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .rsBullets {
   text-align: center; }
 
-/* line 890, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 894, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .rsBullet {
   background: #ddd;
   width: 20px;
@@ -873,11 +877,11 @@ footer {
   border-radius: 100px;
   display: inline-block; }
 
-/* line 901, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 905, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .rsNavSelected {
   background: #0089bc; }
 
-/* line 905, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 909, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .imgBg {
   position: absolute;
   left: 0;
@@ -887,30 +891,30 @@ footer {
   z-index: 1;
   pointer-events: none; }
 
-/* line 914, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 918, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .rsOverflow {
   overflow: visible;
   width: 100%; }
 
-/* line 918, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 922, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #slider-in-laptop .rsBullets {
   bottom: -25px; }
 
-/* line 921, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 925, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .laptopBg {
   position: relative;
   width: 100%;
   height: auto; }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
-  /* line 927, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 931, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #slider-in-laptop .rsBullets {
     bottom: -30px; } }
-/* line 934, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 938, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #pricing {
   background: url(../images/public/pricing-clouds.png) center no-repeat #0089bc; }
 
-/* line 937, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 941, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .price-tier {
   border: 3px solid #dddddd;
   -webkit-transition-duration: 0.2s;
@@ -920,14 +924,14 @@ footer {
   transition-duration: 0.2s;
   min-height: 600px;
   background-color: white; }
-  /* line 942, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 946, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier:hover {
     border-color: #ffd266 !important; }
-  /* line 945, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 949, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier p {
     font-size: 0.75em !important;
     line-height: 20px; }
-    /* line 948, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 952, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .price-tier p.best-val-label {
       background-color: #0089bc;
       margin-bottom: -20px;
@@ -938,13 +942,13 @@ footer {
       font-size: .6em;
       font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif !important;
       color: white; }
-  /* line 960, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 964, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier.price-selectable {
     cursor: pointer; }
-  /* line 963, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 967, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier.price-selected, .price-tier.price-selected:hover {
     border-color: #a8d587 !important; }
-  /* line 967, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 971, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier.price-selected:before {
     content: '✓';
     text-align: center;
@@ -956,26 +960,26 @@ footer {
     left: 3px;
     border-radius: 100px;
     z-index: 33; }
-  /* line 981, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 985, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier .price-table h1 {
     font-family: "museo_sans_100regular", Helvetica, Arial, sans-serif;
     color: #0089bc !important;
     font-size: 3em; }
-  /* line 986, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 990, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier .price-table h2 {
     font-size: 1.5em; }
-  /* line 990, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 994, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .price-tier .price-points {
     margin-top: -84px; }
 
-/* line 999, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1003, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #pricing-sign-up .price-tier {
   min-height: 500px; }
 
-/* line 1007, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1011, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .testimonial .testimonial-bub {
   background-color: #ffd266; }
-  /* line 1009, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1013, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .testimonial .testimonial-bub p {
     color: white;
     font-size: .9em;
@@ -984,7 +988,7 @@ footer {
     font-family: "museo_sans_900regular", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0; }
-  /* line 1019, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1023, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .testimonial .testimonial-bub:after {
     content: "";
     float: left;
@@ -995,270 +999,270 @@ footer {
     position: relative;
     top: 21px; }
 
-/* line 1034, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1038, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .contact-map {
   background: url(../images/public/contact-map.jpg); }
 
-/* line 1040, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1044, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .modal-content {
   border-radius: 0; }
-  /* line 1043, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1047, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .modal-content ul li {
     margin-bottom: 24px; }
 
-/* line 1048, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1052, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .modal-header {
   padding: 48px;
   padding-bottom: 0;
   border: none; }
 
-/* line 1054, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1058, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .modal-body {
   padding: 48px;
   padding-top: 0; }
 
-/* line 1059, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1063, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .modal-footer {
   background-color: #f2f2f2;
   padding: 48px;
   text-align: center;
   text-transform: uppercase; }
-  /* line 1065, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1069, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .modal-footer .min-counter {
     text-transform: none;
     font-size: .8em; }
 
-/* line 1071, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1075, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #calculatorResultsModal {
   font-size: .8em; }
-  /* line 1073, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1077, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #calculatorResultsModal ul {
     margin-left: 24px;
     font-size: .75em;
     margin-bottom: 24px;
     list-style-image: url(../images/public/check.png); }
-    /* line 1078, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1082, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     #calculatorResultsModal ul li {
       margin-bottom: 10px;
       line-height: 18px; }
-  /* line 1083, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1087, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #calculatorResultsModal .modal-footer {
     text-transform: none; }
 
 @media screen and (min-width: 768px) {
-  /* line 1089, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1093, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .modal-dialog {
     width: 70%;
     margin: 60px auto; } }
 @media (max-width: 1199px) {
-  /* line 1102, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1106, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .logo {
     width: 120px;
     margin-top: 5px; }
 
-  /* line 1107, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1111, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsBullet {
     margin-top: 10%; }
 
-  /* line 1111, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1115, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsGCaption {
     min-height: 200px; }
 
-  /* line 1118, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1122, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #pricing-sign-up .price-tier {
     min-height: 520px; }
 
-  /* line 1124, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1128, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #pricing .price-tier {
     min-height: 620px; } }
 @media (max-width: 991px) {
-  /* line 1135, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1139, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   body {
     padding-top: 71px; }
 
-  /* line 1141, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1145, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .logo {
     width: 90px; }
 
-  /* line 1144, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1148, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .navbar {
     padding: 6px; }
 
-  /* line 1147, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1151, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .navbar-brand {
     padding-bottom: 0; }
 
-  /* line 1152, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1156, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #main-navigation ul.nav li {
     font-size: .6em; }
-    /* line 1154, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1158, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     #main-navigation ul.nav li a {
       padding: 8px; }
 
-  /* line 1161, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1165, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsBullet {
     margin-top: 10%; }
 
-  /* line 1166, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1170, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .icons img {
     width: 100%; } }
 @media (max-width: 767px) {
-  /* line 1177, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1181, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .navbar {
     padding: 0;
     margin: 0; }
-    /* line 1180, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1184, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .navbar .navbar-brand {
       padding-bottom: 0; }
 
-  /* line 1186, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1190, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #main-navigation ul.nav {
     padding-bottom: 8px;
     margin-bottom: 0; }
-    /* line 1189, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1193, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     #main-navigation ul.nav li {
       font-size: .8em; }
-  /* line 1193, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1197, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #main-navigation .btn {
     margin: 12px 8px 0 !important; }
 
-  /* line 1198, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1202, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .logo {
     margin: 0; }
 
-  /* line 1203, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1207, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .logos {
     display: none; }
 
-  /* line 1209, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1213, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   body {
     padding-top: 52px;
     font-size: 13pt; }
 
-  /* line 1214, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1218, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   h1 {
     font-size: 2em;
     line-height: 38.4px; }
 
-  /* line 1219, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1223, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   h2 {
     font-size: 1.5em;
     line-height: 30px; }
 
-  /* line 1224, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1228, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .text-right {
     text-align: left; }
 
-  /* line 1228, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1232, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   section {
     padding: 48px 0; }
 
-  /* line 1234, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1238, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsGCaption {
     min-height: 250px; }
 
-  /* line 1238, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1242, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .rsBullet {
     margin-top: 12%; }
 
-  /* line 1243, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1247, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .icons {
     text-align: center; }
 
-  /* line 1249, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1253, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .btn-xl {
     padding: 12px;
     font-size: 1em; }
 
-  /* line 1256, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1260, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .trial-btn {
     margin-left: 0 !important;
     border-radius: 0; }
 
-  /* line 1263, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1267, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .member-login {
     border-bottom: 3px solid #dddddd; }
 
-  /* line 1269, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1273, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   footer {
     text-align: center; }
-    /* line 1270, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1274, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     footer .pull-right, footer .pull-left {
       width: 100%;
       text-align: center; }
 
-  /* line 1279, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1283, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .text-line {
     display: none; }
 
-  /* line 1285, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1289, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .test-table {
     font-size: .6em; }
-    /* line 1287, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1291, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .test-table .text-right {
       text-align: right; }
 
-  /* line 1294, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1298, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .modal {
     font-size: .9em; }
-    /* line 1296, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1300, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .modal p, .modal li, .modal h4, .modal h5, .modal h6 {
       line-height: 20px; }
-    /* line 1299, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1303, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     .modal h2 {
       line-height: 24px; }
 
-  /* line 1307, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1311, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .testimonial p {
     font-size: .8em;
     line-height: 24px !important; }
 
-  /* line 1315, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1319, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #promo-video {
     text-align: center; }
-    /* line 1317, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1321, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     #promo-video .btn {
       width: 100%; } }
-/* line 1327, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1331, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .pricing-calculator .panel-heading {
   background-color: #0089bc;
   padding: 24px; }
-  /* line 1330, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1334, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .pricing-calculator .panel-heading h4 {
     color: white; }
-/* line 1334, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1338, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .pricing-calculator h5 {
   color: #f47b2c; }
-/* line 1337, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1341, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .pricing-calculator b {
   font-size: .8em; }
-/* line 1340, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1344, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .pricing-calculator .progress-value {
   color: #a8d587; }
 
-/* line 1346, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1350, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 .slider {
   width: 100% !important; }
-  /* line 1348, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1352, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   .slider .slider-track {
     background: #0089bc !important; }
 
 @media (max-width: 768px) {
-  /* line 1373, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1377, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   #home-hero {
     background-attachment: scroll; }
 
-  /* line 1377, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+  /* line 1381, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
   a.tech-stars-logo {
     bottom: 0;
     margin: 0 auto; }
-    /* line 1381, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+    /* line 1385, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
     a.tech-stars-logo img {
       text-align: center !important;
       float: none !important;
       margin: 0 !important;
       margin-top: 24px !important; } }
-/* line 1405, /Users/alauderdale/Dropbox/clients/wellhire/wellhire_files/wellhire_product/source/stylesheets/public.css.scss */
+/* line 1409, /Users/MattFiedler/Dropbox/Contract Work/Wellhire/Dev/wellhire_prod_2.0/source/stylesheets/public.css.scss */
 #tech-stars-banner {
   width: 90px;
   height: 175px;
