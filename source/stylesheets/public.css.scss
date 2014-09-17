@@ -691,7 +691,7 @@ form{
 section{
   padding:$baseline*4 0;
   &.invert-section{
-    h1,h2,h3,h4,h5,h6,p{
+    h1,h2,h3,h4,h5,h6,p,li{
       color:white;
     }
   }
@@ -707,6 +707,10 @@ section{
 }
 
 //header
+
+.navbar-nav > li > a {
+  padding-bottom: 25px;
+}
 
 .navbar{
   padding:$baseline/2 0;
