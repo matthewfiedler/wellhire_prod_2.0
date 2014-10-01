@@ -500,6 +500,16 @@ ul.social-nav{
   margin-top: $baseline*3 !important;
 }
 
+// ID Spacing
+
+#demo {
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
+}
+
 //padding helpers
 .padded {
   padding: $baseline !important;
